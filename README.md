@@ -1,6 +1,8 @@
 ASP.NET WebApi
 ==============
 
+Template: https://github.com/fullstackhero/dotnet-webapi-starter-kit
+
 ## Topics
 
 - CI / IOC
