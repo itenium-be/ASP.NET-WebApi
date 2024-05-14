@@ -1,8 +1,6 @@
 ASP.NET WebApi
 ==============
 
-Donderdag 25/4
-
 ## Topics
 
 - CI / IOC
