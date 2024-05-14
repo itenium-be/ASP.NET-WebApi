@@ -1,5 +1,6 @@
 version: '3.8'
 name: fullstackhero
+
 services:
   dotnet-webapi:
     image: iammukeshm/dotnet-webapi:latest
@@ -24,6 +25,7 @@ services:
     depends_on:
       - postgres
     restart: on-failure
+
   postgres:
     container_name: postgres
     image: postgres:15-alpine
@@ -42,21 +44,10 @@ services:
       interval: 10s
       timeout: 5s
       retries: 5
-  # elk:
-  #     container_name:  elasticsearch-kibana
-  #     image: sebp/elk:oss-8.5.3
-  #     environment:
-  #       - LOGSTASH_START=0
-  #     volumes:
-  #       - sebp-elk-data:/usr/share/elk/data
-  #     ports:
-  #       - 5601:5601
-  #       - 9200:9200
-  #     networks:
-  #       - fullstackhero
+
 volumes:
   postgres-data:
-  # sebp-elk-data:
+
 networks:
   fullstackhero:
     name:  fullstackhero

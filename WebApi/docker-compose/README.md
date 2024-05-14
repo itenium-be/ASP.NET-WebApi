@@ -26,27 +26,11 @@ There are some prerequisites for using the included docker-compose.yml files:
 
 ## Docker-Compose Commands
 
-Fullstackhero .NET WebAPI Boilerplate includes 3 Docker-Compose Files!
-- WebAPI + PostgreSQL (default)
-- WebAPI + MSSQL
-- WebAPI + MYSQL
+WebAPI + PostgreSQL
 
-1) WebAPI + PostgreSQL (default)
-```
+```sh
 docker-compose -f docker-compose.postgresql.yml up -d
 docker-compose -f docker-compose.postgresql.yml down
-```
-
-2) WebAPI + MSSQL
-```
-docker-compose -f docker-compose.mssql.yml up -d
-docker-compose -f docker-compose.mssql.yml down
-```
-
-3) WebAPI + MYSQL
-```
-docker-compose -f docker-compose.mysql.yml up -d
-docker-compose -f docker-compose.mysql.yml down
 ```
 
 Your API should be available at `https://localhost:5100/swagger` and `http://localhost:5010/swagger`
