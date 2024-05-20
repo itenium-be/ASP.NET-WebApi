@@ -1,12 +1,12 @@
 version: '3.8'
-name: fullstackhero
+name: itenium-socks
 
 services:
   # dotnet-webapi:
   #   image: iammukeshm/dotnet-webapi:latest
   #   container_name: dotnet-webapi
   #   networks:
-  #     - fullstackhero
+  #     - socks-n-smells
   #   environment:
   #     - ASPNETCORE_ENVIRONMENT=docker
   #     - ASPNETCORE_URLS=https://+:5100;http://+:5010
@@ -30,7 +30,7 @@ services:
     container_name: postgres
     image: postgres:15-alpine
     networks:
-      - fullstackhero
+      - socks-n-smells
     environment:
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=admin
@@ -49,5 +49,5 @@ volumes:
   postgres-data:
 
 networks:
-  fullstackhero:
-    name:  fullstackhero
+  socks-n-smells:
+    name: socks-n-smells

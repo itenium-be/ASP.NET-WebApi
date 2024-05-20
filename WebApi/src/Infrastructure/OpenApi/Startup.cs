@@ -37,17 +37,17 @@ internal static class Startup
                     doc.Info.Title = settings.Title;
                     doc.Info.Version = settings.Version;
                     doc.Info.Description = settings.Description;
-                    doc.Info.Contact = new()
-                    {
-                        Name = settings.ContactName,
-                        Email = settings.ContactEmail,
-                        Url = settings.ContactUrl
-                    };
-                    doc.Info.License = new()
-                    {
-                        Name = settings.LicenseName,
-                        Url = settings.LicenseUrl
-                    };
+                    // doc.Info.Contact = new()
+                    // {
+                    //     Name = settings.ContactName,
+                    //     Email = settings.ContactEmail,
+                    //     Url = settings.ContactUrl
+                    // };
+                    // doc.Info.License = new()
+                    // {
+                    //     Name = settings.LicenseName,
+                    //     Url = settings.LicenseUrl
+                    // };
                 };
 
                 if (config["SecuritySettings:Provider"].Equals("AzureAd", StringComparison.OrdinalIgnoreCase))
