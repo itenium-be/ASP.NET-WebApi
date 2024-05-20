@@ -7,6 +7,7 @@ ASP.NET WebApi
 - Install Docker for Windows
 - Install .NET 7 SDK
 - Node v16+ (?)
+- `docker pull postgres:15-alpine`
 
 
 ## postgres
