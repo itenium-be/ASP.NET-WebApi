@@ -32,7 +32,9 @@ docker compose up -d
 
 ### Get a Token
 
-Swagger: Tokens -> POST `/api/tokens`  
+### Swagger
+
+Tokens -> POST `/api/tokens`  
 Tenant: `root`
 
 ```json
@@ -42,8 +44,31 @@ Tenant: `root`
 }
 ```
 
-Also see `postman` for a postman collection.  
-Or, CURL command for getting a token:
+
+### Postman
+
+See `postman` for a postman collection.  
+Or go with an open-source & free alternative that looks exactly the same:
+
+- [hoppscotch.io](https://hoppscotch.io/): In browser Postman
+    - [Chrome Extension](https://chrome.google.com/webstore/detail/hoppscotch-browser-extens/amknoiejhlmhancpahfcfcfhllgkpbld)
+    - [Docker-Compose](https://github.com/hoppscotch/hoppscotch/blob/main/docker-compose.yml)
+    - [Github](https://github.com/hoppscotch/hoppscotch)
+- [Insomnia](https://github.com/Kong/insomnia)
+- [Nightingale](https://github.com/jenius-apps/nightingale-rest-api-client)
+
+
+In Visual Studio Code:
+
+- [Thunder Client](https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client): VSCode Plugin
+    - [Github](https://github.com/rangav/thunder-client-support)
+- [REST Client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client)
+    - [Github](https://github.com/Huachao/vscode-restclient)
+
+
+### cURL
+
+CURL command for getting a token:
 
 ```curl
 curl -X POST \
@@ -68,6 +93,11 @@ curl -X POST \
 - Fluent Validations
 - Response Caching - Distributed Caching + REDIS
 
+
+## REST
+
+See `REST-JWT.pptx` for some general REST infos.
+Or see our specific [REST-JWT-Postman-DevTools](https://github.com/itenium-be/REST-JWT-DevTools) session.
 
 
 
