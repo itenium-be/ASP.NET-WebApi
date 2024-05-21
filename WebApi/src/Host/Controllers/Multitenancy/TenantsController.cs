@@ -1,15 +1,23 @@
 using FSH.WebApi.Application.Multitenancy;
+using System.Threading;
 
 namespace FSH.WebApi.Host.Controllers.Multitenancy;
 
 public class TenantsController : VersionNeutralApiController
 {
+    private readonly ITenantService _tenantService;
+
+    public TenantsController(ITenantService tenantService)
+    {
+        _tenantService = tenantService;
+    }
+
     [HttpGet]
     [MustHavePermission(FSHAction.View, FSHResource.Tenants)]
     [OpenApiOperation("Get a list of all tenants.", "")]
     public Task<List<TenantDto>> GetListAsync()
     {
-        return Mediator.Send(new GetAllTenantsRequest());
+        return _tenantService.GetAllAsync();
     }
 
     [HttpGet("{id}")]
@@ -17,15 +25,15 @@ public class TenantsController : VersionNeutralApiController
     [OpenApiOperation("Get tenant details.", "")]
     public Task<TenantDto> GetAsync(string id)
     {
-        return Mediator.Send(new GetTenantRequest(id));
+        return _tenantService.GetByIdAsync(id);
     }
 
     [HttpPost]
     [MustHavePermission(FSHAction.Create, FSHResource.Tenants)]
     [OpenApiOperation("Create a new tenant.", "")]
-    public Task<string> CreateAsync(CreateTenantRequest request)
+    public Task<string> CreateAsync(CreateTenantRequest request, CancellationToken cancellationToken)
     {
-        return Mediator.Send(request);
+        return _tenantService.CreateAsync(request, cancellationToken);
     }
 
     [HttpPost("{id}/activate")]
@@ -34,7 +42,7 @@ public class TenantsController : VersionNeutralApiController
     [ApiConventionMethod(typeof(FSHApiConventions), nameof(FSHApiConventions.Register))]
     public Task<string> ActivateAsync(string id)
     {
-        return Mediator.Send(new ActivateTenantRequest(id));
+        return _tenantService.ActivateAsync(id);
     }
 
     [HttpPost("{id}/deactivate")]
@@ -43,7 +51,7 @@ public class TenantsController : VersionNeutralApiController
     [ApiConventionMethod(typeof(FSHApiConventions), nameof(FSHApiConventions.Register))]
     public Task<string> DeactivateAsync(string id)
     {
-        return Mediator.Send(new DeactivateTenantRequest(id));
+        return _tenantService.DeactivateAsync(id);
     }
 
     [HttpPost("{id}/upgrade")]
@@ -54,6 +62,6 @@ public class TenantsController : VersionNeutralApiController
     {
         return id != request.TenantId
             ? BadRequest()
-            : Ok(await Mediator.Send(request));
+            : Ok(await _tenantService.UpdateSubscription(request.TenantId, request.ExtendedExpiryDate));
     }
 }

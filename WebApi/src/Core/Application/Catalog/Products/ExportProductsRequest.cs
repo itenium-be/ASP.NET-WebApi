@@ -2,32 +2,11 @@
 
 namespace FSH.WebApi.Application.Catalog.Products;
 
-public class ExportProductsRequest : BaseFilter, IRequest<Stream>
+public class ExportProductsRequest : BaseFilter
 {
     public Guid? BrandId { get; set; }
     public decimal? MinimumRate { get; set; }
     public decimal? MaximumRate { get; set; }
-}
-
-public class ExportProductsRequestHandler : IRequestHandler<ExportProductsRequest, Stream>
-{
-    private readonly IReadRepository<Product> _repository;
-    private readonly IExcelWriter _excelWriter;
-
-    public ExportProductsRequestHandler(IReadRepository<Product> repository, IExcelWriter excelWriter)
-    {
-        _repository = repository;
-        _excelWriter = excelWriter;
-    }
-
-    public async Task<Stream> Handle(ExportProductsRequest request, CancellationToken cancellationToken)
-    {
-        var spec = new ExportProductsWithBrandsSpecification(request);
-
-        var list = await _repository.ListAsync(spec, cancellationToken);
-
-        return _excelWriter.WriteToStream(list);
-    }
 }
 
 public class ExportProductsWithBrandsSpecification : EntitiesByBaseFilterSpec<Product, ProductExportDto>

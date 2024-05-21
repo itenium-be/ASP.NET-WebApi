@@ -1,6 +1,6 @@
 namespace FSH.WebApi.Application.Catalog.Brands;
 
-public class UpdateBrandRequest : IRequest<Guid>
+public class UpdateBrandRequest
 {
     public Guid Id { get; set; }
     public string Name { get; set; } = default!;

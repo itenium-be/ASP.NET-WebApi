@@ -1,15 +1,13 @@
 ﻿using FSH.WebApi.Application.Common.Events;
 using FSH.WebApi.Application.Common.Interfaces;
 using FSH.WebApi.Shared.Notifications;
-using MediatR;
 
 namespace FSH.WebApi.Infrastructure.Notifications;
 
 // Sends all events that are also an INotificationMessage to all clients
 // Note: for this to work, the Event/NotificationMessage class needs to be in the
 // shared project (i.e. have the same FullName - so with namespace - on both sides)
-public class SendEventNotificationToClientsHandler<TNotification> : INotificationHandler<TNotification>
-    where TNotification : INotification
+public class SendEventNotificationToClientsHandler<TNotification>
 {
     private readonly INotificationSender _notifications;
 

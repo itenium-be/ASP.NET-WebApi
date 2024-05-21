@@ -1,15 +1,22 @@
 using System.Security.Claims;
 using FSH.WebApi.Application.Auditing;
+using FSH.WebApi.Application.Common.Interfaces;
 using FSH.WebApi.Application.Identity.Users;
 using FSH.WebApi.Application.Identity.Users.Password;
+using FSH.WebApi.Infrastructure.Auditing;
 
 namespace FSH.WebApi.Host.Controllers.Identity;
 
 public class PersonalController : VersionNeutralApiController
 {
     private readonly IUserService _userService;
+    private readonly IAuditService _auditService;
 
-    public PersonalController(IUserService userService) => _userService = userService;
+    public PersonalController(IUserService userService, IAuditService auditService)
+    {
+        _userService = userService;
+        _auditService = auditService;
+    }
 
     [HttpGet("profile")]
     [OpenApiOperation("Get profile details of currently logged in user.", "")]
@@ -60,6 +67,6 @@ public class PersonalController : VersionNeutralApiController
     [OpenApiOperation("Get audit logs of currently logged in user.", "")]
     public Task<List<AuditDto>> GetLogsAsync()
     {
-        return Mediator.Send(new GetMyAuditLogsRequest());
+        return _auditService.GetUserTrailsAsync();
     }
 }

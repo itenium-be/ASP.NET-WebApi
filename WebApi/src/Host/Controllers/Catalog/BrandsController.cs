@@ -1,12 +1,10 @@
-﻿using Ardalis.Specification;
-using FSH.WebApi.Application.Catalog.Brands;
+﻿using FSH.WebApi.Application.Catalog.Brands;
 using FSH.WebApi.Application.Catalog.Products;
 using FSH.WebApi.Application.Common.Exceptions;
 using FSH.WebApi.Application.Common.Interfaces;
 using FSH.WebApi.Application.Common.Persistence;
 using FSH.WebApi.Domain.Catalog;
 using Microsoft.Extensions.Localization;
-using System.Threading;
 
 namespace FSH.WebApi.Host.Controllers.Catalog;
 

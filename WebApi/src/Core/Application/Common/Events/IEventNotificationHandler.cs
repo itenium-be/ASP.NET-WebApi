@@ -3,12 +3,12 @@
 namespace FSH.WebApi.Application.Common.Events;
 
 // This is just a shorthand to make it a bit easier to create event handlers for specific events.
-public interface IEventNotificationHandler<TEvent> : INotificationHandler<EventNotification<TEvent>>
+public interface IEventNotificationHandler<TEvent>
     where TEvent : IEvent
 {
 }
 
-public abstract class EventNotificationHandler<TEvent> : INotificationHandler<EventNotification<TEvent>>
+public abstract class EventNotificationHandler<TEvent>
     where TEvent : IEvent
 {
     public Task Handle(EventNotification<TEvent> notification, CancellationToken cancellationToken) =>

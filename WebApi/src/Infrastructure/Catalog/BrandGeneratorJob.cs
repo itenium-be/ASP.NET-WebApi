@@ -1,33 +1,33 @@
 ﻿using FSH.WebApi.Application.Catalog.Brands;
 using FSH.WebApi.Application.Common.Interfaces;
+using FSH.WebApi.Application.Common.Persistence;
+using FSH.WebApi.Domain.Catalog;
 using FSH.WebApi.Shared.Notifications;
 using Hangfire;
 using Hangfire.Console.Extensions;
 using Hangfire.Console.Progress;
 using Hangfire.Server;
-using MediatR;
 
 namespace FSH.WebApi.Infrastructure.Catalog;
 
 public class BrandGeneratorJob : IBrandGeneratorJob
 {
-    private readonly ISender _mediator;
     private readonly PerformingContext _performingContext;
     private readonly INotificationSender _notifications;
     private readonly ICurrentUser _currentUser;
     private readonly IProgressBar _progress;
+    private readonly IRepositoryWithEvents<Brand> _repository;
 
     public BrandGeneratorJob(
-        ISender mediator,
         IProgressBarFactory progressBar,
         PerformingContext performingContext,
         INotificationSender notifications,
-        ICurrentUser currentUser)
+        ICurrentUser currentUser, IRepositoryWithEvents<Brand> repository)
     {
-        _mediator = mediator;
         _performingContext = performingContext;
         _notifications = notifications;
         _currentUser = currentUser;
+        _repository = repository;
         _progress = progressBar.Create();
     }
 
@@ -52,14 +52,8 @@ public class BrandGeneratorJob : IBrandGeneratorJob
 
         foreach (int index in Enumerable.Range(1, nSeed))
         {
-            await _mediator.Send(
-                new CreateBrandRequest
-                {
-                    Name = $"Brand Random - {Guid.NewGuid()}",
-                    Description = "Funny description"
-                },
-                cancellationToken);
-
+            var brand = new Brand($"Brand Random - {Guid.NewGuid()}", "Funny description");
+            await _repository.AddAsync(brand, cancellationToken);
             await NotifyAsync("Progress: ", nSeed > 0 ? (index * 100 / nSeed) : 0, cancellationToken);
         }
 

@@ -16,8 +16,6 @@ using FSH.WebApi.Infrastructure.OpenApi;
 using FSH.WebApi.Infrastructure.Persistence;
 using FSH.WebApi.Infrastructure.Persistence.Initialization;
 using FSH.WebApi.Infrastructure.SecurityHeaders;
-using FSH.WebApi.Infrastructure.Validations;
-using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Routing;
@@ -32,7 +30,6 @@ public static class Startup
 {
     public static IServiceCollection AddInfrastructure(this IServiceCollection services, IConfiguration config)
     {
-        var applicationAssembly = typeof(FSH.WebApi.Application.Startup).GetTypeInfo().Assembly;
         MapsterSettings.Configure();
         return services
             .AddApiVersioning()
@@ -41,11 +38,9 @@ public static class Startup
             .AddCaching(config)
             .AddCorsPolicy(config)
             .AddExceptionMiddleware()
-            .AddBehaviours(applicationAssembly)
             .AddHealthCheck()
             .AddPOLocalization(config)
             .AddMailing(config)
-            .AddMediatR(Assembly.GetExecutingAssembly())
             .AddMultitenancy()
             .AddNotifications(config)
             .AddOpenApiDocumentation(config)
