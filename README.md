@@ -42,7 +42,8 @@ Tenant: `root`
 }
 ```
 
-CURL command for getting a token:
+Also see `postman` for a postman collection.  
+Or, CURL command for getting a token:
 
 ```curl
 curl -X POST \
