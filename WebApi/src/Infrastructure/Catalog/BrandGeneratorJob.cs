@@ -22,7 +22,8 @@ public class BrandGeneratorJob : IBrandGeneratorJob
         IProgressBarFactory progressBar,
         PerformingContext performingContext,
         INotificationSender notifications,
-        ICurrentUser currentUser, IRepositoryWithEvents<Brand> repository)
+        ICurrentUser currentUser,
+        IRepositoryWithEvents<Brand> repository)
     {
         _performingContext = performingContext;
         _notifications = notifications;
