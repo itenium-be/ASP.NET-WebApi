@@ -60,6 +60,7 @@ curl -X POST \
 ### Features
 
 - Multi Tenancy Support with Finbuckle
+- EF Repository Abstraction with [Ardalis.Specification](https://github.com/ardalis/Specification)
 - Serilog
 - OpenAPI & Swagger
 - API Versioning
