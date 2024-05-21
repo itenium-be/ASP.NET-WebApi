@@ -1,65 +1,105 @@
-﻿using FSH.WebApi.Application.Catalog.Brands;
+﻿using Ardalis.Specification;
+using FSH.WebApi.Application.Catalog.Brands;
+using FSH.WebApi.Application.Catalog.Products;
+using FSH.WebApi.Application.Common.Exceptions;
+using FSH.WebApi.Application.Common.Interfaces;
+using FSH.WebApi.Application.Common.Persistence;
+using FSH.WebApi.Domain.Catalog;
+using Microsoft.Extensions.Localization;
+using System.Threading;
 
 namespace FSH.WebApi.Host.Controllers.Catalog;
 
 public class BrandsController : VersionedApiController
 {
+    private readonly IRepositoryWithEvents<Brand> _repository;
+    private readonly IStringLocalizer _t;
+    private readonly IReadRepository<Product> _productRepo;
+    private readonly IJobService _jobService;
+
+    public BrandsController(
+        IRepositoryWithEvents<Brand> repository,
+        IStringLocalizer<BrandsController> localizer,
+        IReadRepository<Product> productRepo,
+        IJobService jobService)
+    {
+        _repository = repository;
+        _t = localizer;
+        _productRepo = productRepo;
+        _jobService = jobService;
+    }
+
     [HttpPost("search")]
     [MustHavePermission(FSHAction.Search, FSHResource.Brands)]
     [OpenApiOperation("Search brands using available filters.", "")]
-    public Task<PaginationResponse<BrandDto>> SearchAsync(SearchBrandsRequest request)
+    public Task<PaginationResponse<BrandDto>> SearchAsync(SearchBrandsRequest request, CancellationToken cancellationToken)
     {
-        return Mediator.Send(request);
+        var spec = new BrandsBySearchRequestSpec(request);
+        return _repository.PaginatedListAsync(spec, request.PageNumber, request.PageSize, cancellationToken);
     }
 
     [HttpGet("{id:guid}")]
     [MustHavePermission(FSHAction.View, FSHResource.Brands)]
     [OpenApiOperation("Get brand details.", "")]
-    public Task<BrandDto> GetAsync(Guid id)
+    public async Task<BrandDto> GetAsync(Guid id, CancellationToken cancellationToken)
     {
-        return Mediator.Send(new GetBrandRequest(id));
+        var result = await _repository.FirstOrDefaultAsync(new BrandByIdSpec(id), cancellationToken);
+        if (result == null)
+            // TODO: the po files are generated I hope? It included the namespace, so prolly won't work anymore now?
+            throw new NotFoundException(_t["Brand {0} Not Found.", id]);
+
+        return result;
     }
 
     [HttpPost]
     [MustHavePermission(FSHAction.Create, FSHResource.Brands)]
     [OpenApiOperation("Create a new brand.", "")]
-    public Task<Guid> CreateAsync(CreateBrandRequest request)
+    public async Task<Guid> CreateAsync(CreateBrandRequest request, CancellationToken cancellationToken)
     {
-        return Mediator.Send(request);
+        var brand = new Brand(request.Name, request.Description);
+        await _repository.AddAsync(brand, cancellationToken);
+        return brand.Id;
     }
 
     [HttpPut("{id:guid}")]
     [MustHavePermission(FSHAction.Update, FSHResource.Brands)]
     [OpenApiOperation("Update a brand.", "")]
-    public async Task<ActionResult<Guid>> UpdateAsync(UpdateBrandRequest request, Guid id)
+    public async Task<ActionResult<Guid>> UpdateAsync(UpdateBrandRequest request, Guid id, CancellationToken cancellationToken)
     {
-        return id != request.Id
-            ? BadRequest()
-            : Ok(await Mediator.Send(request));
+        if (id != request.Id) // TODO: remove this & turn it into an exercise "There is a security vulnerability in the PUT /api/brand
+            return BadRequest();
+
+        var brand = await _repository.GetByIdAsync(request.Id, cancellationToken);
+        if (brand == null)
+            throw new NotFoundException(_t["Brand {0} Not Found.", request.Id]);
+
+        brand.Update(request.Name, request.Description);
+        await _repository.UpdateAsync(brand, cancellationToken);
+        return Ok(id);
     }
 
     [HttpDelete("{id:guid}")]
     [MustHavePermission(FSHAction.Delete, FSHResource.Brands)]
     [OpenApiOperation("Delete a brand.", "")]
-    public Task<Guid> DeleteAsync(Guid id)
+    public async Task<Guid> DeleteAsync(Guid id, CancellationToken cancellationToken)
     {
-        return Mediator.Send(new DeleteBrandRequest(id));
+        if (await _productRepo.AnyAsync(new ProductsByBrandSpec(id), cancellationToken))
+        {
+            throw new ConflictException(_t["Brand cannot be deleted as it's being used."]);
+        }
+
+        var brand = await _repository.GetByIdAsync(id, cancellationToken);
+        _ = brand ?? throw new NotFoundException(_t["Brand {0} Not Found."]);
+        await _repository.DeleteAsync(brand, cancellationToken);
+        return id;
     }
 
     [HttpPost("generate-random")]
     [MustHavePermission(FSHAction.Generate, FSHResource.Brands)]
     [OpenApiOperation("Generate a number of random brands.", "")]
-    public Task<string> GenerateRandomAsync(GenerateRandomBrandRequest request)
+    public Task<string> GenerateRandomAsync(int seedAmount)
     {
-        return Mediator.Send(request);
-    }
-
-    [HttpDelete("delete-random")]
-    [MustHavePermission(FSHAction.Clean, FSHResource.Brands)]
-    [OpenApiOperation("Delete the brands generated with the generate-random call.", "")]
-    [ApiConventionMethod(typeof(FSHApiConventions), nameof(FSHApiConventions.Search))]
-    public Task<string> DeleteRandomAsync()
-    {
-        return Mediator.Send(new DeleteRandomBrandRequest());
+        string jobId = _jobService.Enqueue<IBrandGeneratorJob>(x => x.GenerateAsync(seedAmount, default));
+        return Task.FromResult(jobId);
     }
 }
