@@ -16,6 +16,9 @@ public class SendEventNotificationToClientsHandler<TNotification>
 
     public Task Handle(TNotification notification, CancellationToken cancellationToken)
     {
+        if (notification == null)
+            return Task.CompletedTask;
+
         var notificationType = typeof(TNotification);
         if (notificationType.IsGenericType
             && notificationType.GetGenericTypeDefinition() == typeof(EventNotification<>)

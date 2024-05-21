@@ -37,6 +37,7 @@ internal static class Startup
                     doc.Info.Title = settings.Title;
                     doc.Info.Version = settings.Version;
                     doc.Info.Description = settings.Description;
+
                     // doc.Info.Contact = new()
                     // {
                     //     Name = settings.ContactName,
