@@ -103,16 +103,14 @@ Or see our specific [REST-JWT-Postman-DevTools](https://github.com/itenium-be/RE
 
 ## Topics
 
-- CI / IOC
-- Filters / custom middleware / global error handling
+- Filters / custom middleware / global error handling (ActionFilterAttribute)
 - Minimal APIs
-- Model binding
+- Versioning: Create a /v2 where we renamed products -> socks (or just uri-rewriting?)
 - Configuration json (secrets.json)
 - JSON Serialization (enums) / Zipping
-- REST
-- Caching
-- Poly (Retries)
-- Validation
+- Caching (Redis)
+- Polly (Retries)
+- Validation (Attributes and/or FluentValidation)
 - Return Http Codes
 - Working with files (upload/download)
 - Logging?
