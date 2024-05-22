@@ -36,3 +36,57 @@ Imagine that ALL `Guid[]` are always passed like `?ids=1,2,3`
 How to add this to the IOC container?
 
 See `QueryStringIdsBinderProvider`.
+
+
+
+3. BrandsController :: Create
+
+There are a few special cases for which some additional logic
+needs to be performed when creating a new brand.
+
+We've added a `Type` to the `CreateBrandRequest`
+
+```c#
+public enum BrandType
+{
+  OurBrand,
+  ThirdPartyBrand,
+}
+```
+
+The request body looks like this:
+
+```json
+{
+  "name": "Socks-n-Smells",
+  "description": "This famous socks brand has, due its enormous success, been split off itenium",
+  "type": 0
+}
+```
+
+But who can ever remember what `0` or `1` means?  
+We want to pass `OurBrand` or `ThirdPartyBrand` as a string instead.
+
+
+
+4. DateTime vs DatePicker
+
+Our frontend has a `DatePicker` control which sends dates in a very specific format:
+
+```
+ddMMyyyy
+```
+
+For eaxmple our BrandsController::Create has an `ActiveFrom` field that needs to accept standard
+DateTimes and also this specific format.
+
+
+5. Damn Americans!
+
+Our American users submitted a ticket that this format isn't working for them.
+After some analysis it turns out that their format is `MMddyyyy`.
+
+We need to check the `Accept-Language` header and parse as `MMddyyyy` when the
+value is `en-US`.
+
+Because this is getting rather complicated, we need 100% test coverage for this!

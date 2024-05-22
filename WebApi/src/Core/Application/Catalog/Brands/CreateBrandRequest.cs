@@ -4,8 +4,16 @@ public class CreateBrandRequest
 {
     public string Name { get; set; } = default!;
     public string? Description { get; set; }
+    public BrandType Type { get; set; }
+    public DateTime ActiveFrom { get; set; }
 
     public override string ToString() => $"{Name} - {Description}";
+}
+
+public enum BrandType
+{
+    OurBrand,
+    ThirdPartyBrand,
 }
 
 public class CreateBrandRequestValidator : CustomValidator<CreateBrandRequest>

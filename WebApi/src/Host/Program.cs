@@ -1,11 +1,9 @@
-using FSH.WebApi.Application;
 using FSH.WebApi.Host.Configurations;
 using FSH.WebApi.Host.Controllers;
 using FSH.WebApi.Infrastructure;
 using FSH.WebApi.Infrastructure.Common;
 using FSH.WebApi.Infrastructure.Logging.Serilog;
 using Serilog;
-using Serilog.Formatting.Compact;
 
 [assembly: ApiConventionType(typeof(FSHApiConventions))]
 
