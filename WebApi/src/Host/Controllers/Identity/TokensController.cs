@@ -12,7 +12,7 @@ public sealed class TokensController : VersionNeutralApiController
     [AllowAnonymous]
     [TenantIdHeader]
     [OpenApiOperation("Request an access token using credentials.", "")]
-    public Task<TokenResponse> GetTokenAsync(TokenRequest request, CancellationToken cancellationToken)
+    public Task<TokenResponse> GetToken(TokenRequest request, CancellationToken cancellationToken)
     {
         return _tokenService.GetTokenAsync(request, GetIpAddress()!, cancellationToken);
     }
@@ -22,7 +22,7 @@ public sealed class TokensController : VersionNeutralApiController
     [TenantIdHeader]
     [OpenApiOperation("Request an access token using a refresh token.", "")]
     [ApiConventionMethod(typeof(FSHApiConventions), nameof(FSHApiConventions.Search))]
-    public Task<TokenResponse> RefreshAsync(RefreshTokenRequest request)
+    public Task<TokenResponse> Refresh(RefreshTokenRequest request)
     {
         return _tokenService.RefreshTokenAsync(request, GetIpAddress()!);
     }

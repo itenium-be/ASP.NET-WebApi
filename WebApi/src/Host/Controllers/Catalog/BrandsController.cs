@@ -30,7 +30,7 @@ public class BrandsController : VersionedApiController
     [HttpPost("search")]
     [MustHavePermission(FSHAction.Search, FSHResource.Brands)]
     [OpenApiOperation("Search brands using available filters.", "")]
-    public Task<PaginationResponse<BrandDto>> SearchAsync(SearchBrandsRequest request, CancellationToken cancellationToken)
+    public Task<PaginationResponse<BrandDto>> Search(SearchBrandsRequest request, CancellationToken cancellationToken)
     {
         var spec = new BrandsBySearchRequestSpec(request);
         return _repository.PaginatedListAsync(spec, request.PageNumber, request.PageSize, cancellationToken);
@@ -39,7 +39,7 @@ public class BrandsController : VersionedApiController
     [HttpGet("{id:guid}")]
     [MustHavePermission(FSHAction.View, FSHResource.Brands)]
     [OpenApiOperation("Get brand details.", "")]
-    public async Task<BrandDto> GetAsync(Guid id, CancellationToken cancellationToken)
+    public async Task<BrandDto> Get(Guid id, CancellationToken cancellationToken)
     {
         var result = await _repository.FirstOrDefaultAsync(new BrandByIdSpec(id), cancellationToken);
         if (result == null)
@@ -52,7 +52,7 @@ public class BrandsController : VersionedApiController
     [HttpPost]
     [MustHavePermission(FSHAction.Create, FSHResource.Brands)]
     [OpenApiOperation("Create a new brand.", "")]
-    public async Task<Guid> CreateAsync(CreateBrandRequest request, CancellationToken cancellationToken)
+    public async Task<Guid> Create(CreateBrandRequest request, CancellationToken cancellationToken)
     {
         var brand = new Brand(request.Name, request.Description);
         await _repository.AddAsync(brand, cancellationToken);
@@ -62,7 +62,7 @@ public class BrandsController : VersionedApiController
     [HttpPut("{id:guid}")]
     [MustHavePermission(FSHAction.Update, FSHResource.Brands)]
     [OpenApiOperation("Update a brand.", "")]
-    public async Task<ActionResult<Guid>> UpdateAsync(UpdateBrandRequest request, Guid id, CancellationToken cancellationToken)
+    public async Task<ActionResult<Guid>> Update(UpdateBrandRequest request, Guid id, CancellationToken cancellationToken)
     {
         if (id != request.Id) // TODO: remove this & turn it into an exercise "There is a security vulnerability in the PUT /api/brand
             return BadRequest();
@@ -79,7 +79,7 @@ public class BrandsController : VersionedApiController
     [HttpDelete("{id:guid}")]
     [MustHavePermission(FSHAction.Delete, FSHResource.Brands)]
     [OpenApiOperation("Delete a brand.", "")]
-    public async Task<Guid> DeleteAsync(Guid id, CancellationToken cancellationToken)
+    public async Task<Guid> Delete(Guid id, CancellationToken cancellationToken)
     {
         if (await _productRepo.AnyAsync(new ProductsByBrandSpec(id), cancellationToken))
         {

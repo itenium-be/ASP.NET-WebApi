@@ -20,7 +20,7 @@ public class PersonalController : VersionNeutralApiController
 
     [HttpGet("profile")]
     [OpenApiOperation("Get profile details of currently logged in user.", "")]
-    public async Task<ActionResult<UserDetailsDto>> GetProfileAsync(CancellationToken cancellationToken)
+    public async Task<ActionResult<UserDetailsDto>> GetProfile(CancellationToken cancellationToken)
     {
         return User.GetUserId() is not { } userId || string.IsNullOrEmpty(userId)
             ? Unauthorized()
@@ -29,7 +29,7 @@ public class PersonalController : VersionNeutralApiController
 
     [HttpPut("profile")]
     [OpenApiOperation("Update profile details of currently logged in user.", "")]
-    public async Task<ActionResult> UpdateProfileAsync(UpdateUserRequest request)
+    public async Task<ActionResult> UpdateProfile(UpdateUserRequest request)
     {
         if (User.GetUserId() is not { } userId || string.IsNullOrEmpty(userId))
         {
@@ -43,7 +43,7 @@ public class PersonalController : VersionNeutralApiController
     [HttpPut("change-password")]
     [OpenApiOperation("Change password of currently logged in user.", "")]
     [ApiConventionMethod(typeof(FSHApiConventions), nameof(FSHApiConventions.Register))]
-    public async Task<ActionResult> ChangePasswordAsync(ChangePasswordRequest model)
+    public async Task<ActionResult> ChangePassword(ChangePasswordRequest model)
     {
         if (User.GetUserId() is not { } userId || string.IsNullOrEmpty(userId))
         {
@@ -56,7 +56,7 @@ public class PersonalController : VersionNeutralApiController
 
     [HttpGet("permissions")]
     [OpenApiOperation("Get permissions of currently logged in user.", "")]
-    public async Task<ActionResult<List<string>>> GetPermissionsAsync(CancellationToken cancellationToken)
+    public async Task<ActionResult<List<string>>> GetPermissions(CancellationToken cancellationToken)
     {
         return User.GetUserId() is not { } userId || string.IsNullOrEmpty(userId)
             ? Unauthorized()
@@ -65,7 +65,7 @@ public class PersonalController : VersionNeutralApiController
 
     [HttpGet("logs")]
     [OpenApiOperation("Get audit logs of currently logged in user.", "")]
-    public Task<List<AuditDto>> GetLogsAsync()
+    public Task<List<AuditDto>> GetLogs()
     {
         return _auditService.GetUserTrailsAsync();
     }

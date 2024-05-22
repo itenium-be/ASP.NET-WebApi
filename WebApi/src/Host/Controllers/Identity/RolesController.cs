@@ -11,7 +11,7 @@ public class RolesController : VersionNeutralApiController
     [HttpGet]
     [MustHavePermission(FSHAction.View, FSHResource.Roles)]
     [OpenApiOperation("Get a list of all roles.", "")]
-    public Task<List<RoleDto>> GetListAsync(CancellationToken cancellationToken)
+    public Task<List<RoleDto>> GetList(CancellationToken cancellationToken)
     {
         return _roleService.GetListAsync(cancellationToken);
     }
@@ -19,7 +19,7 @@ public class RolesController : VersionNeutralApiController
     [HttpGet("{id}")]
     [MustHavePermission(FSHAction.View, FSHResource.Roles)]
     [OpenApiOperation("Get role details.", "")]
-    public Task<RoleDto> GetByIdAsync(string id)
+    public Task<RoleDto> GetById(string id)
     {
         return _roleService.GetByIdAsync(id);
     }
@@ -27,7 +27,7 @@ public class RolesController : VersionNeutralApiController
     [HttpGet("{id}/permissions")]
     [MustHavePermission(FSHAction.View, FSHResource.RoleClaims)]
     [OpenApiOperation("Get role details with its permissions.", "")]
-    public Task<RoleDto> GetByIdWithPermissionsAsync(string id, CancellationToken cancellationToken)
+    public Task<RoleDto> GetByIdWithPermissions(string id, CancellationToken cancellationToken)
     {
         return _roleService.GetByIdWithPermissionsAsync(id, cancellationToken);
     }
@@ -35,7 +35,7 @@ public class RolesController : VersionNeutralApiController
     [HttpPut("{id}/permissions")]
     [MustHavePermission(FSHAction.Update, FSHResource.RoleClaims)]
     [OpenApiOperation("Update a role's permissions.", "")]
-    public async Task<ActionResult<string>> UpdatePermissionsAsync(string id, UpdateRolePermissionsRequest request, CancellationToken cancellationToken)
+    public async Task<ActionResult<string>> UpdatePermissions(string id, UpdateRolePermissionsRequest request, CancellationToken cancellationToken)
     {
         if (id != request.RoleId)
         {
@@ -48,7 +48,7 @@ public class RolesController : VersionNeutralApiController
     [HttpPost]
     [MustHavePermission(FSHAction.Create, FSHResource.Roles)]
     [OpenApiOperation("Create or update a role.", "")]
-    public Task<string> RegisterRoleAsync(CreateOrUpdateRoleRequest request)
+    public Task<string> RegisterRole(CreateOrUpdateRoleRequest request)
     {
         return _roleService.CreateOrUpdateAsync(request);
     }
@@ -56,7 +56,7 @@ public class RolesController : VersionNeutralApiController
     [HttpDelete("{id}")]
     [MustHavePermission(FSHAction.Delete, FSHResource.Roles)]
     [OpenApiOperation("Delete a role.", "")]
-    public Task<string> DeleteAsync(string id)
+    public Task<string> Delete(string id)
     {
         return _roleService.DeleteAsync(id);
     }

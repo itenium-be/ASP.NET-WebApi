@@ -28,7 +28,7 @@ public class DashboardController : VersionedApiController
     [HttpGet]
     [MustHavePermission(FSHAction.View, FSHResource.Dashboard)]
     [OpenApiOperation("Get statistics for the dashboard.", "")]
-    public async Task<StatsDto> GetAsync(CancellationToken cancellationToken)
+    public async Task<StatsDto> Get(CancellationToken cancellationToken)
     {
         var stats = new StatsDto
         {

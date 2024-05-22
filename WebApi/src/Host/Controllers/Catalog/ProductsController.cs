@@ -32,7 +32,7 @@ public class ProductsController : VersionedApiController
     [HttpPost("search")]
     [MustHavePermission(FSHAction.Search, FSHResource.Products)]
     [OpenApiOperation("Search products using available filters.", "")]
-    public Task<PaginationResponse<ProductDto>> SearchAsync(SearchProductsRequest request, CancellationToken cancellationToken)
+    public Task<PaginationResponse<ProductDto>> Search(SearchProductsRequest request, CancellationToken cancellationToken)
     {
         var spec = new ProductsBySearchRequestWithBrandsSpec(request);
         return _repository.PaginatedListAsync(spec, request.PageNumber, request.PageSize, cancellationToken: cancellationToken);
@@ -41,7 +41,7 @@ public class ProductsController : VersionedApiController
     [HttpGet("{id:guid}")]
     [MustHavePermission(FSHAction.View, FSHResource.Products)]
     [OpenApiOperation("Get product details.", "")]
-    public async Task<ProductDetailsDto> GetAsync(Guid id, CancellationToken cancellationToken)
+    public async Task<ProductDetailsDto> Get(Guid id, CancellationToken cancellationToken)
     {
         return await _repository.FirstOrDefaultAsync(
                    (ISpecification<Product, ProductDetailsDto>)new ProductByIdWithBrandSpec(id), cancellationToken)
@@ -51,7 +51,7 @@ public class ProductsController : VersionedApiController
     [HttpGet("dapper")]
     [MustHavePermission(FSHAction.View, FSHResource.Products)]
     [OpenApiOperation("Get product details via dapper.", "")]
-    public async Task<ProductDto> GetDapperAsync(Guid id, CancellationToken cancellationToken)
+    public async Task<ProductDto> GetDapper(Guid id, CancellationToken cancellationToken)
     {
         var product = await _dapper.QueryFirstOrDefaultAsync<Product>(
             $"SELECT * FROM Catalog.\"Products\" WHERE \"Id\"  = '{id}' AND \"TenantId\" = '@tenant'", cancellationToken: cancellationToken);
@@ -75,7 +75,7 @@ public class ProductsController : VersionedApiController
     [HttpPost]
     [MustHavePermission(FSHAction.Create, FSHResource.Products)]
     [OpenApiOperation("Create a new product.", "")]
-    public async Task<Guid> CreateAsync(CreateProductRequest request, CancellationToken cancellationToken)
+    public async Task<Guid> Create(CreateProductRequest request, CancellationToken cancellationToken)
     {
         string productImagePath = await _file.UploadAsync<Product>(request.Image, FileType.Image, cancellationToken);
         var product = new Product(request.Name, request.Description, request.Rate, request.BrandId, productImagePath);
@@ -90,7 +90,7 @@ public class ProductsController : VersionedApiController
     [HttpPut("{id:guid}")]
     [MustHavePermission(FSHAction.Update, FSHResource.Products)]
     [OpenApiOperation("Update a product.", "")]
-    public async Task<ActionResult<Guid>> UpdateAsync(UpdateProductRequest request, Guid id, CancellationToken cancellationToken)
+    public async Task<ActionResult<Guid>> Update(UpdateProductRequest request, Guid id, CancellationToken cancellationToken)
     {
         if (id != request.Id)
             return BadRequest();
@@ -129,7 +129,7 @@ public class ProductsController : VersionedApiController
     [HttpDelete("{id:guid}")]
     [MustHavePermission(FSHAction.Delete, FSHResource.Products)]
     [OpenApiOperation("Delete a product.", "")]
-    public async Task<Guid> DeleteAsync(Guid id, CancellationToken cancellationToken)
+    public async Task<Guid> Delete(Guid id, CancellationToken cancellationToken)
     {
         var product = await _repository.GetByIdAsync(id, cancellationToken);
         _ = product ?? throw new NotFoundException(_t["Product {0} Not Found."]);
@@ -144,7 +144,7 @@ public class ProductsController : VersionedApiController
     [HttpPost("export")]
     [MustHavePermission(FSHAction.Export, FSHResource.Products)]
     [OpenApiOperation("Export a products.", "")]
-    public async Task<FileResult> ExportAsync(ExportProductsRequest filter, CancellationToken cancellationToken)
+    public async Task<FileResult> Export(ExportProductsRequest filter, CancellationToken cancellationToken)
     {
         var spec = new ExportProductsWithBrandsSpecification(filter);
         var list = await _repository.ListAsync(spec, cancellationToken);

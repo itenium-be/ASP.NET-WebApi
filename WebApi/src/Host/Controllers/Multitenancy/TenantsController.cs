@@ -15,7 +15,7 @@ public class TenantsController : VersionNeutralApiController
     [HttpGet]
     [MustHavePermission(FSHAction.View, FSHResource.Tenants)]
     [OpenApiOperation("Get a list of all tenants.", "")]
-    public Task<List<TenantDto>> GetListAsync()
+    public Task<List<TenantDto>> GetList()
     {
         return _tenantService.GetAllAsync();
     }
@@ -23,7 +23,7 @@ public class TenantsController : VersionNeutralApiController
     [HttpGet("{id}")]
     [MustHavePermission(FSHAction.View, FSHResource.Tenants)]
     [OpenApiOperation("Get tenant details.", "")]
-    public Task<TenantDto> GetAsync(string id)
+    public Task<TenantDto> Get(string id)
     {
         return _tenantService.GetByIdAsync(id);
     }
@@ -31,7 +31,7 @@ public class TenantsController : VersionNeutralApiController
     [HttpPost]
     [MustHavePermission(FSHAction.Create, FSHResource.Tenants)]
     [OpenApiOperation("Create a new tenant.", "")]
-    public Task<string> CreateAsync(CreateTenantRequest request, CancellationToken cancellationToken)
+    public Task<string> Create(CreateTenantRequest request, CancellationToken cancellationToken)
     {
         return _tenantService.CreateAsync(request, cancellationToken);
     }
@@ -40,7 +40,7 @@ public class TenantsController : VersionNeutralApiController
     [MustHavePermission(FSHAction.Update, FSHResource.Tenants)]
     [OpenApiOperation("Activate a tenant.", "")]
     [ApiConventionMethod(typeof(FSHApiConventions), nameof(FSHApiConventions.Register))]
-    public Task<string> ActivateAsync(string id)
+    public Task<string> Activate(string id)
     {
         return _tenantService.ActivateAsync(id);
     }
@@ -49,7 +49,7 @@ public class TenantsController : VersionNeutralApiController
     [MustHavePermission(FSHAction.Update, FSHResource.Tenants)]
     [OpenApiOperation("Deactivate a tenant.", "")]
     [ApiConventionMethod(typeof(FSHApiConventions), nameof(FSHApiConventions.Register))]
-    public Task<string> DeactivateAsync(string id)
+    public Task<string> Deactivate(string id)
     {
         return _tenantService.DeactivateAsync(id);
     }
@@ -58,7 +58,7 @@ public class TenantsController : VersionNeutralApiController
     [MustHavePermission(FSHAction.UpgradeSubscription, FSHResource.Tenants)]
     [OpenApiOperation("Upgrade a tenant's subscription.", "")]
     [ApiConventionMethod(typeof(FSHApiConventions), nameof(FSHApiConventions.Register))]
-    public async Task<ActionResult<string>> UpgradeSubscriptionAsync(string id, UpgradeSubscriptionRequest request)
+    public async Task<ActionResult<string>> UpgradeSubscription(string id, UpgradeSubscriptionRequest request)
     {
         return id != request.TenantId
             ? BadRequest()
