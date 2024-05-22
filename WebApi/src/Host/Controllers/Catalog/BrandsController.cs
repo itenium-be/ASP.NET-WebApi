@@ -4,6 +4,7 @@ using FSH.WebApi.Application.Common.Exceptions;
 using FSH.WebApi.Application.Common.Interfaces;
 using FSH.WebApi.Application.Common.Persistence;
 using FSH.WebApi.Domain.Catalog;
+using FSH.WebApi.Host.Infrastructure;
 using Microsoft.Extensions.Localization;
 
 namespace FSH.WebApi.Host.Controllers.Catalog;
@@ -90,6 +91,15 @@ public class BrandsController : VersionedApiController
         _ = brand ?? throw new NotFoundException(_t["Brand {0} Not Found."]);
         await _repository.DeleteAsync(brand, cancellationToken);
         return id;
+    }
+
+    [HttpDelete]
+    [MustHavePermission(FSHAction.Delete, FSHResource.Brands)]
+    [OpenApiOperation("Delete multiple brands.", "")]
+    public Task<Guid[]> DeleteMany(Guid[] ids)
+    {
+        // ModelBinding Exercise
+        return Task.FromResult(ids);
     }
 
     [HttpPost("generate-random")]
