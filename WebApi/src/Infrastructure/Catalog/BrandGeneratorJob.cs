@@ -1,4 +1,6 @@
-﻿using FSH.WebApi.Application.Catalog.Brands;
+﻿using Bogus;
+using DocumentFormat.OpenXml.Spreadsheet;
+using FSH.WebApi.Application.Catalog.Brands;
 using FSH.WebApi.Application.Common.Interfaces;
 using FSH.WebApi.Application.Common.Persistence;
 using FSH.WebApi.Domain.Catalog;
@@ -50,10 +52,12 @@ public class BrandGeneratorJob : IBrandGeneratorJob
     public async Task GenerateAsync(int nSeed, CancellationToken cancellationToken)
     {
         await NotifyAsync("Your job processing has started", 0, cancellationToken);
+        var brandFaker = new Faker<Brand>()
+            .CustomInstantiator(f => new Brand(f.Company.CompanyName(), f.Company.CatchPhrase()));
 
         foreach (int index in Enumerable.Range(1, nSeed))
         {
-            var brand = new Brand($"Brand Random - {Guid.NewGuid()}", "Funny description");
+            var brand = brandFaker.Generate();
             await _repository.AddAsync(brand, cancellationToken);
             await NotifyAsync("Progress: ", nSeed > 0 ? (index * 100 / nSeed) : 0, cancellationToken);
         }
