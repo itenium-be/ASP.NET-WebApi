@@ -7,4 +7,6 @@ public class CreateTenantRequest
     public string? ConnectionString { get; set; }
     public string AdminEmail { get; set; } = default!;
     public string? Issuer { get; set; }
+
+    public override string ToString() => $"{Name}, Admin={AdminEmail}";
 }

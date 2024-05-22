@@ -39,4 +39,6 @@ public class Product : AuditableEntity, IAggregateRoot
         ImagePath = string.Empty;
         return this;
     }
+
+    public override string ToString() => $"{Name} ({Brand?.Name ?? BrandId.ToString()})";
 }

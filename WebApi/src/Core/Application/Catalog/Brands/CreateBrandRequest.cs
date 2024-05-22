@@ -4,6 +4,8 @@ public class CreateBrandRequest
 {
     public string Name { get; set; } = default!;
     public string? Description { get; set; }
+
+    public override string ToString() => $"{Name} - {Description}";
 }
 
 public class CreateBrandRequestValidator : CustomValidator<CreateBrandRequest>

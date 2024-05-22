@@ -17,4 +17,6 @@ public class Brand : AuditableEntity, IAggregateRoot
         if (description is not null && Description?.Equals(description) is not true) Description = description;
         return this;
     }
+
+    public override string ToString() => $"{Name} - {Description}";
 }

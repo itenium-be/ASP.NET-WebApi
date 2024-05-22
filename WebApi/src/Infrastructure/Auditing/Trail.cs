@@ -12,4 +12,6 @@ public class Trail : BaseEntity
     public string? NewValues { get; set; }
     public string? AffectedColumns { get; set; }
     public string? PrimaryKey { get; set; }
+
+    public override string ToString() => $"{Type} on {TableName} at {DateTime:g}";
 }

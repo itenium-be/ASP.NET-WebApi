@@ -9,4 +9,6 @@ public class TenantDto
     public bool IsActive { get; set; }
     public DateTime ValidUpto { get; set; }
     public string? Issuer { get; set; }
+
+    public override string ToString() => $"{Name}, Admin={AdminEmail}, Active={IsActive}";
 }

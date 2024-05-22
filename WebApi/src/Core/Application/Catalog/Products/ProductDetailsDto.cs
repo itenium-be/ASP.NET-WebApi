@@ -10,4 +10,6 @@ public class ProductDetailsDto : IDto
     public decimal Rate { get; set; }
     public string? ImagePath { get; set; }
     public BrandDto Brand { get; set; } = default!;
+
+    public override string ToString() => $"{Name} - {Description} (Brand={Brand?.Name})";
 }

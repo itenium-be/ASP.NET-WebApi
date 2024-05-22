@@ -9,4 +9,6 @@ public class ProductDto : IDto
     public string? ImagePath { get; set; }
     public Guid BrandId { get; set; }
     public string BrandName { get; set; } = default!;
+
+    public override string ToString() => $"{Name} - {Description} (Brand={BrandName})";
 }

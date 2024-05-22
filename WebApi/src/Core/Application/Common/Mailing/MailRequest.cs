@@ -38,4 +38,6 @@ public class MailRequest
     public IDictionary<string, byte[]> AttachmentData { get; }
 
     public IDictionary<string, string> Headers { get; }
+
+    public override string ToString() => $"{Subject} (To={To}, From={From})";
 }

@@ -31,4 +31,6 @@ public class Filter
     public string? Operator { get; set; }
 
     public object? Value { get; set; }
+
+    public override string ToString() => $"{Field} {Operator} {Value}";
 }

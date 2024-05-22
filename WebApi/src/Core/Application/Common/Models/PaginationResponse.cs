@@ -24,4 +24,6 @@ public class PaginationResponse<T>
     public bool HasPreviousPage => CurrentPage > 1;
 
     public bool HasNextPage => CurrentPage < TotalPages;
+
+    public override string ToString() => $"{CurrentPage} / {TotalPages}. Size={PageSize}, TotalCount={TotalCount}";
 }

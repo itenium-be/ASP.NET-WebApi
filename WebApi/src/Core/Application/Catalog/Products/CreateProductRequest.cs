@@ -9,4 +9,6 @@ public class CreateProductRequest
     public decimal Rate { get; set; }
     public Guid BrandId { get; set; }
     public FileUploadRequest? Image { get; set; }
+
+    public override string ToString() => $"{Name} (Rate={Rate}, Image={(Image == null ? "No" : "Yes")})";
 }

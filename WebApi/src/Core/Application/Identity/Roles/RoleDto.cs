@@ -6,4 +6,6 @@ public class RoleDto
     public string Name { get; set; } = default!;
     public string? Description { get; set; }
     public List<string>? Permissions { get; set; }
+
+    public override string ToString() => $"{Id} {Name}. Permissions={string.Join(", ", Permissions ?? new List<string>())}";
 }

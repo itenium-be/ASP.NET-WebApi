@@ -4,4 +4,6 @@ public class ToggleUserStatusRequest
 {
     public bool ActivateUser { get; set; }
     public string? UserId { get; set; }
+
+    public override string ToString() => $"{UserId}: Activate={ActivateUser}";
 }

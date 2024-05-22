@@ -16,4 +16,6 @@ public class BaseFilter
     /// Advanced column filtering with logical operators and query operators is supported.
     /// </summary>
     public Filter? AdvancedFilter { get; set; }
+
+    public override string ToString() => $"{Keyword}, Search=({AdvancedSearch})";
 }

@@ -9,4 +9,6 @@ public class CreateUserRequest
     public string Password { get; set; } = default!;
     public string ConfirmPassword { get; set; } = default!;
     public string? PhoneNumber { get; set; }
+
+    public override string ToString() => $"{FirstName} {LastName} ({Email})";
 }

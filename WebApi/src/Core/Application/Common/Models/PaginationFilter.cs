@@ -7,6 +7,8 @@ public class PaginationFilter : BaseFilter
     public int PageSize { get; set; } = int.MaxValue;
 
     public string[]? OrderBy { get; set; }
+
+    public override string ToString() => $"Page {PageNumber} (Size={PageSize}), Order={(OrderBy == null ? "None" : string.Join(", ", OrderBy))}";
 }
 
 public static class PaginationFilterExtensions

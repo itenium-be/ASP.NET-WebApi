@@ -9,4 +9,6 @@ public class UpdateProductRequest
     public Guid BrandId { get; set; }
     public bool DeleteCurrentImage { get; set; } = false;
     public FileUploadRequest? Image { get; set; }
+
+    public override string ToString() => $"{Name} - {Description} (Image={(Image == null ? "No" : "Yes")}, DeleteCurrent={DeleteCurrentImage})";
 }
