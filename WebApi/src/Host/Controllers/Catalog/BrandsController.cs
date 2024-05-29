@@ -4,7 +4,6 @@ using FSH.WebApi.Application.Common.Exceptions;
 using FSH.WebApi.Application.Common.Interfaces;
 using FSH.WebApi.Application.Common.Persistence;
 using FSH.WebApi.Domain.Catalog;
-using FSH.WebApi.Host.Infrastructure;
 using Microsoft.Extensions.Localization;
 
 namespace FSH.WebApi.Host.Controllers.Catalog;
@@ -55,7 +54,7 @@ public class BrandsController : VersionedApiController
     [OpenApiOperation("Create a new brand.", "")]
     public async Task<Guid> Create(CreateBrandRequest request, CancellationToken cancellationToken)
     {
-        var brand = new Brand(request.Name, request.Description);
+        var brand = new Brand(request.Name, request.Description, request.Type.ToString(), request.ActiveFrom ?? DateOnly.FromDateTime(DateTime.UtcNow));
         await _repository.AddAsync(brand, cancellationToken);
         return brand.Id;
     }
@@ -65,9 +64,6 @@ public class BrandsController : VersionedApiController
     [OpenApiOperation("Update a brand.", "")]
     public async Task<ActionResult<Guid>> Update(UpdateBrandRequest request, Guid id, CancellationToken cancellationToken)
     {
-        if (id != request.Id) // TODO: remove this & turn it into an exercise "There is a security vulnerability in the PUT /api/brand
-            return BadRequest();
-
         var brand = await _repository.GetByIdAsync(request.Id, cancellationToken);
         if (brand == null)
             throw new NotFoundException(_t["Brand {0} Not Found.", request.Id]);

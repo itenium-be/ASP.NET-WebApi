@@ -52,8 +52,9 @@ public class BrandGeneratorJob : IBrandGeneratorJob
     public async Task GenerateAsync(int nSeed, CancellationToken cancellationToken)
     {
         await NotifyAsync("Your job processing has started", 0, cancellationToken);
+        var random = new Random();
         var brandFaker = new Faker<Brand>()
-            .CustomInstantiator(f => new Brand(f.Company.CompanyName(), f.Company.CatchPhrase()));
+            .CustomInstantiator(f => new Brand(f.Company.CompanyName(), f.Company.CatchPhrase(), ((BrandType)random.Next(2)).ToString(), DateOnly.FromDateTime(DateTime.UtcNow)));
 
         foreach (int index in Enumerable.Range(1, nSeed))
         {

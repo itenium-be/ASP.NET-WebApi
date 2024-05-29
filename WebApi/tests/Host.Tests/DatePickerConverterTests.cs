@@ -3,23 +3,23 @@ using FSH.WebApi.Application.Catalog.Brands;
 using FSH.WebApi.Host.Infrastructure;
 using System.Net;
 using System.Net.Http.Headers;
-using System.Net.Http.Json;
 using System.Text;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
 namespace Host.Tests;
 
-public class EnumStringConverterTests : AuthenticatedTestBase {
-    public EnumStringConverterTests(TestWebApplicationFactory factory)
+public class DatePickerConverterTests : AuthenticatedTestBase {
+    public DatePickerConverterTests(TestWebApplicationFactory factory)
         : base(factory) { }
 
     [Fact]
-    public async Task CreateBrandTypeRequest_ShouldAcceptEnumValueNameInsteadOfEnumValue() {
+    public async Task DatePickerFormat_ShouldBeParseCorrectly() {
         // Arrange
         const string request = @"{
-            ""Name"": ""Test"",
-            ""Type"": ""ThirdPartyBrand""
+            ""Name"": ""i<3"",
+            ""Type"": ""OurBrand"",
+            ""ActiveFrom"": ""31052024""
         }";
 
         // Act
@@ -38,6 +38,6 @@ public class EnumStringConverterTests : AuthenticatedTestBase {
             }
         );
         response.StatusCode.Should().Be(HttpStatusCode.OK);
-        savedBrand.Type.Should().Be(BrandType.ThirdPartyBrand);
+        savedBrand.ActiveFrom.Should().Be(new DateOnly(2024, 5, 31));
     }
 }
