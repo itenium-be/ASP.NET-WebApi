@@ -1,9 +1,11 @@
 using FSH.WebApi.Host.Configurations;
 using FSH.WebApi.Host.Controllers;
+using FSH.WebApi.Host.Infrastructure;
 using FSH.WebApi.Infrastructure;
 using FSH.WebApi.Infrastructure.Common;
 using FSH.WebApi.Infrastructure.Logging.Serilog;
 using Serilog;
+using System.Runtime.CompilerServices;
 
 [assembly: ApiConventionType(typeof(FSHApiConventions))]
 
@@ -36,3 +38,4 @@ finally
     Log.Information("Server Shutting down...");
     Log.CloseAndFlush();
 }
+public partial class Program { }
