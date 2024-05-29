@@ -4,6 +4,7 @@ using FSH.WebApi.Application.Common.Exceptions;
 using FSH.WebApi.Application.Common.Interfaces;
 using FSH.WebApi.Application.Common.Persistence;
 using FSH.WebApi.Domain.Catalog;
+using FSH.WebApi.Infrastructure.Common;
 using Microsoft.Extensions.Localization;
 
 namespace FSH.WebApi.Host.Controllers.Catalog;
@@ -62,7 +63,7 @@ public class BrandsController : VersionedApiController
     [HttpPut("{id:guid}")]
     [MustHavePermission(FSHAction.Update, FSHResource.Brands)]
     [OpenApiOperation("Update a brand.", "")]
-    public async Task<ActionResult<Guid>> Update(UpdateBrandRequest request, Guid id, CancellationToken cancellationToken)
+    public async Task<ActionResult<Guid>> Update([FromBody] UpdateBrandRequest request, [FromQuery] Guid id, CancellationToken cancellationToken)
     {
         var brand = await _repository.GetByIdAsync(request.Id, cancellationToken);
         if (brand == null)

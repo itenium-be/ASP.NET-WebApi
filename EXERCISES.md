@@ -90,3 +90,12 @@ We need to check the `Accept-Language` header and parse as `MMddyyyy` when the
 value is `en-US`.
 
 Because this is getting rather complicated, we need 100% test coverage for this!
+
+6. Our junior developer added the BrandsController::Update action. However pen-tests have revealed a security vulnerability
+
+We need to validate that the Update request body contains the same Brand Id in the query as in the request body.
+
+We can use FluentValidations to add a Request Validator. To check with the querypath the http context needs to be injected by the DI container. Make sure the validator is registered.
+
+Tip: use FluentValidationAutoValidation from the `SharpGrip.FluentValidation.AutoValidation.Mvc.Extensions` package.
+

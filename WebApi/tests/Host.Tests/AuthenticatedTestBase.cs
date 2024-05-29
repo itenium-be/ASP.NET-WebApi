@@ -18,7 +18,7 @@ public abstract class AuthenticatedTestBase : IClassFixture<TestWebApplicationFa
         using var tokenResponse = JsonDocument.Parse(await response.Content.ReadAsStringAsync());
         Client.DefaultRequestHeaders.Clear();
         Client.DefaultRequestHeaders.Add("tenant", "root");
-        Client.DefaultRequestHeaders.Add("Authorization", $"Bearer {tokenResponse.RootElement.GetString("token")}");
+        Client.DefaultRequestHeaders.Add("Authorization", $"Bearer {tokenResponse.RootElement.GetProperty("token").GetString()}");
     }
 
     public async Task InitializeAsync() {
