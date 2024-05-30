@@ -68,6 +68,14 @@ builder.Services.AddControllers().AddJsonOptions(x =>
 // Or directly:
 // builder.Services.AddHttpContextAccessor();
 builder.Services.AddScoped<ILanguageProvider, LanguageProvider>();
+
+//Or using DI
+builder.Services.AddControllers().AddJsonOptions(x =>
+{
+  var serviceProvider = services.BuildServiceProvider();
+  var httpContextAccessor = serviceProvider.GetRequiredService<IHttpContextAccessor>();
+  x.JsonSerializerOptions.Converters.Add(new DatePickerConverter(languageProvider));
+});
 ```
 
 
