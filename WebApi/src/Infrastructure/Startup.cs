@@ -18,10 +18,12 @@ using FSH.WebApi.Infrastructure.Persistence.Initialization;
 using FSH.WebApi.Infrastructure.SecurityHeaders;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.ResponseCompression;
 using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using SharpGrip.FluentValidation.AutoValidation.Mvc.Extensions;
+using System.IO.Compression;
 
 [assembly: InternalsVisibleTo("Infrastructure.Test")]
 [assembly: InternalsVisibleTo("Host.Tests")]
@@ -45,6 +47,7 @@ public static class Startup {
                .AddNotifications(config)
                .AddOpenApiDocumentation(config)
                .AddPersistence()
+               .AddResponseCompression()
                .AddRequestLogging(config)
                .AddRouting(options => options.LowercaseUrls = true)
                .AddServices();
@@ -57,10 +60,9 @@ public static class Startup {
             config.ReportApiVersions = true;
         });
 
-
-
     private static IServiceCollection AddHealthCheck(this IServiceCollection services) =>
         services.AddHealthChecks().AddCheck<TenantHealthCheck>("Tenant").Services;
+
 
     public static async Task InitializeDatabasesAsync(this IServiceProvider services, CancellationToken cancellationToken = default) {
         // Create a new scope to retrieve scoped services

@@ -2,7 +2,6 @@
 using FSH.WebApi.Application.Common.Persistence;
 using FSH.WebApi.Domain.Catalog;
 using Microsoft.Extensions.Localization;
-using System.Threading;
 using Ardalis.Specification;
 using FSH.WebApi.Application.Common.Exceptions;
 using FSH.WebApi.Application.Common.FileStorage;
@@ -20,10 +19,10 @@ public class ProductsController : VersionedApiController
     private readonly IFileStorageService _file;
     private readonly IExcelWriter _excelWriter;
 
-    public ProductsController(IRepository<Product> repository, IStringLocalizer t, IDapperRepository dapper, IFileStorageService file, IExcelWriter excelWriter)
+    public ProductsController(IRepository<Product> repository, IStringLocalizerFactory t, IDapperRepository dapper, IFileStorageService file, IExcelWriter excelWriter)
     {
         _repository = repository;
-        _t = t;
+        _t = t.Create("Application", "ApplicationResource");
         _dapper = dapper;
         _file = file;
         _excelWriter = excelWriter;

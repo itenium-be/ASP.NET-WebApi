@@ -31,5 +31,37 @@
     "Description": "Sample Data",
     "Type": "ThirdPartyBrand",
     "ActiveFrom": "2021-01-01"
+  },
+  {
+    "Id": "c63afcf8-28db-462e-86bc-0d4c0c2c6a31",
+    "Name": "Acer",
+    "ImageUrl": "https://fullstackhero.net/images/navbar-logo.png",
+    "Description": "Sample Data",
+    "Type": "OwnBrand",
+    "ActiveFrom": "2020-03-24"
+  },
+  {
+    "Id": "366f6531-d225-47da-b7f8-80507978f702",
+    "Name": "Apple",
+    "ImageUrl": "https://fullstackhero.net/images/navbar-logo.png",
+    "Description": "Sample Data",
+    "Type": "OwnBrand",
+    "ActiveFrom": "2021-05-18"
+  },
+  {
+    "Id": "ce5c97cb-0201-47be-9e86-c8f92b897800",
+    "Name": "Dell",
+    "ImageUrl": "https://fullstackhero.net/images/navbar-logo.png",
+    "Description": "Sample Data",
+    "Type": "ThirdPartyBrand",
+    "ActiveFrom": "2021-02-26"
+  },
+  {
+    "Id": "3f1e62e0-de3e-4de2-b865-895a03f749d3",
+    "Name": "Asus",
+    "ImageUrl": "https://fullstackhero.net/images/navbar-logo.png",
+    "Description": "Sample Data",
+    "Type": "OwnBrand",
+    "ActiveFrom": "2021-03-14"
   }
 ]

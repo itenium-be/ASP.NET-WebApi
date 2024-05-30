@@ -1,0 +1,1602 @@
+[
+  {
+    "Id": "fef13fc6-902f-4bef-8250-f44b1fd8991d",
+    "Name": "Smartwatch",
+    "Description": "Description for product",
+    "Rate": 1515.93,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "ca43337c-c9bc-4c18-98e1-3bf8694f9fb7"
+  },
+  {
+    "Id": "11bc703e-5ead-4d9f-8a0e-2068c4911000",
+    "Name": "Laptop",
+    "Description": "Description for product",
+    "Rate": 1619.34,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "ca43337c-c9bc-4c18-98e1-3bf8694f9fb7"
+  },
+  {
+    "Id": "59f46423-60fc-42db-b8c2-a12fea7dd155",
+    "Name": "Desktop",
+    "Description": "Description for product",
+    "Rate": 1043.65,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "ca43337c-c9bc-4c18-98e1-3bf8694f9fb7"
+  },
+  {
+    "Id": "afa0bfda-a07d-4a38-a633-a81b77aec3cd",
+    "Name": "Monitor",
+    "Description": "Description for product",
+    "Rate": 1238.2,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "ca43337c-c9bc-4c18-98e1-3bf8694f9fb7"
+  },
+  {
+    "Id": "67f0edde-c8b9-40f3-bb33-e78ac28d8607",
+    "Name": "Monitor",
+    "Description": "Description for product",
+    "Rate": 1667.25,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "ca43337c-c9bc-4c18-98e1-3bf8694f9fb7"
+  },
+  {
+    "Id": "f0962adc-a8ee-4bf9-91c8-dd03e7042c62",
+    "Name": "Mouse",
+    "Description": "Description for product",
+    "Rate": 506.23,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "ca43337c-c9bc-4c18-98e1-3bf8694f9fb7"
+  },
+  {
+    "Id": "b800f248-f029-4fd2-8945-266291b1adaf",
+    "Name": "Charger",
+    "Description": "Description for product",
+    "Rate": 1747.35,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "ca43337c-c9bc-4c18-98e1-3bf8694f9fb7"
+  },
+  {
+    "Id": "f9c7df58-5ba9-4cd8-bc83-cc8778d6ce06",
+    "Name": "Monitor",
+    "Description": "Description for product",
+    "Rate": 737.99,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "ca43337c-c9bc-4c18-98e1-3bf8694f9fb7"
+  },
+  {
+    "Id": "e1a755f5-04af-491d-8975-5e0ff01f66d3",
+    "Name": "Keyboard",
+    "Description": "Description for product",
+    "Rate": 114.03,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "ca43337c-c9bc-4c18-98e1-3bf8694f9fb7"
+  },
+  {
+    "Id": "795589a4-0d0b-47f9-8e35-eefa7267b5d1",
+    "Name": "Smartwatch",
+    "Description": "Description for product",
+    "Rate": 1304.49,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "ca43337c-c9bc-4c18-98e1-3bf8694f9fb7"
+  },
+  {
+    "Id": "a23c7936-c9da-480d-9e9e-196deccbb95f",
+    "Name": "Tablet",
+    "Description": "Description for product",
+    "Rate": 1938.92,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "ca43337c-c9bc-4c18-98e1-3bf8694f9fb7"
+  },
+  {
+    "Id": "eb594e73-d438-49e1-93af-19d4047a2bfc",
+    "Name": "Tablet",
+    "Description": "Description for product",
+    "Rate": 1340.0,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "ca43337c-c9bc-4c18-98e1-3bf8694f9fb7"
+  },
+  {
+    "Id": "7b76fd72-7e18-4a09-9c5c-c6a67a58fb34",
+    "Name": "Keyboard",
+    "Description": "Description for product",
+    "Rate": 1847.27,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "ca43337c-c9bc-4c18-98e1-3bf8694f9fb7"
+  },
+  {
+    "Id": "6e203a8e-7821-4a9f-839d-eca1e37bf376",
+    "Name": "Desktop",
+    "Description": "Description for product",
+    "Rate": 1894.02,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "ca43337c-c9bc-4c18-98e1-3bf8694f9fb7"
+  },
+  {
+    "Id": "2e988f02-9600-4398-8975-e281ac0dce05",
+    "Name": "Smartphone",
+    "Description": "Description for product",
+    "Rate": 144.68,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "ca43337c-c9bc-4c18-98e1-3bf8694f9fb7"
+  },
+  {
+    "Id": "5db4a8e0-54b9-4dbc-8255-604abe8f44ad",
+    "Name": "Mouse",
+    "Description": "Description for product",
+    "Rate": 1530.0,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "ca43337c-c9bc-4c18-98e1-3bf8694f9fb7"
+  },
+  {
+    "Id": "2f2a0378-f3d9-4c7e-a6a4-b4ec3b9dbd81",
+    "Name": "Keyboard",
+    "Description": "Description for product",
+    "Rate": 1067.8,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "ca43337c-c9bc-4c18-98e1-3bf8694f9fb7"
+  },
+  {
+    "Id": "7d0cc6d6-949e-48f7-b263-6fce31f61404",
+    "Name": "Monitor",
+    "Description": "Description for product",
+    "Rate": 1529.74,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "ca43337c-c9bc-4c18-98e1-3bf8694f9fb7"
+  },
+  {
+    "Id": "da7fee7f-2132-4d9e-91c6-2f21900010a4",
+    "Name": "Desktop",
+    "Description": "Description for product",
+    "Rate": 1694.98,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "ca43337c-c9bc-4c18-98e1-3bf8694f9fb7"
+  },
+  {
+    "Id": "218f3b5e-a5f3-42a3-a693-555c1db4102d",
+    "Name": "Smartphone",
+    "Description": "Description for product",
+    "Rate": 1426.5,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "ca43337c-c9bc-4c18-98e1-3bf8694f9fb7"
+  },
+  {
+    "Id": "27441deb-876f-46dd-9a53-ea3a50343574",
+    "Name": "Keyboard",
+    "Description": "Description for product",
+    "Rate": 1415.72,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "ca43337c-c9bc-4c18-98e1-3bf8694f9fb7"
+  },
+  {
+    "Id": "5023c99d-fb52-4b83-8e07-f5852ba9072f",
+    "Name": "Keyboard",
+    "Description": "Description for product",
+    "Rate": 1266.61,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "ca43337c-c9bc-4c18-98e1-3bf8694f9fb7"
+  },
+  {
+    "Id": "27d19107-f2a8-439d-8cb4-fd8900ff775e",
+    "Name": "Smartwatch",
+    "Description": "Description for product",
+    "Rate": 1750.82,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "ca43337c-c9bc-4c18-98e1-3bf8694f9fb7"
+  },
+  {
+    "Id": "3e32f9a3-fdfc-4618-941d-27e8c56b5641",
+    "Name": "Charger",
+    "Description": "Description for product",
+    "Rate": 1913.46,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "ca43337c-c9bc-4c18-98e1-3bf8694f9fb7"
+  },
+  {
+    "Id": "4420ea98-5097-452c-a29b-8b120ab20190",
+    "Name": "Charger",
+    "Description": "Description for product",
+    "Rate": 282.9,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "ca43337c-c9bc-4c18-98e1-3bf8694f9fb7"
+  },
+  {
+    "Id": "f3a9089c-e4af-4dbe-984c-a29d566b9904",
+    "Name": "Monitor",
+    "Description": "Description for product",
+    "Rate": 1913.64,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "538f5ce7-9bd4-4309-8e62-6e566b01fdfe"
+  },
+  {
+    "Id": "e7c8c77d-7492-4c61-b822-2d8db4f01edb",
+    "Name": "Charger",
+    "Description": "Description for product",
+    "Rate": 465.39,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "538f5ce7-9bd4-4309-8e62-6e566b01fdfe"
+  },
+  {
+    "Id": "d2ae5587-0bce-46c9-b930-bc843d41e28c",
+    "Name": "Keyboard",
+    "Description": "Description for product",
+    "Rate": 849.71,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "538f5ce7-9bd4-4309-8e62-6e566b01fdfe"
+  },
+  {
+    "Id": "9b8c716c-310c-4d55-b11c-718a8d5e91da",
+    "Name": "Smartwatch",
+    "Description": "Description for product",
+    "Rate": 1112.98,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "538f5ce7-9bd4-4309-8e62-6e566b01fdfe"
+  },
+  {
+    "Id": "af19f3b0-5645-4731-9127-017ca85519c0",
+    "Name": "Laptop",
+    "Description": "Description for product",
+    "Rate": 1910.57,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "538f5ce7-9bd4-4309-8e62-6e566b01fdfe"
+  },
+  {
+    "Id": "4d0c1176-bc0e-4e70-ad36-fabcfc98fba2",
+    "Name": "Charger",
+    "Description": "Description for product",
+    "Rate": 814.51,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "538f5ce7-9bd4-4309-8e62-6e566b01fdfe"
+  },
+  {
+    "Id": "8a9c08ea-8c26-4147-8c3c-a1a8a2ec6e18",
+    "Name": "Mouse",
+    "Description": "Description for product",
+    "Rate": 1399.21,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "538f5ce7-9bd4-4309-8e62-6e566b01fdfe"
+  },
+  {
+    "Id": "ae419469-669f-43ae-84ee-ac5a7616b958",
+    "Name": "Keyboard",
+    "Description": "Description for product",
+    "Rate": 1315.03,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "538f5ce7-9bd4-4309-8e62-6e566b01fdfe"
+  },
+  {
+    "Id": "eed76162-4a1d-464d-8d24-38c34199b8d2",
+    "Name": "Desktop",
+    "Description": "Description for product",
+    "Rate": 1093.12,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "538f5ce7-9bd4-4309-8e62-6e566b01fdfe"
+  },
+  {
+    "Id": "709b2794-ae0e-475e-85c8-6be49b67eea3",
+    "Name": "Smartphone",
+    "Description": "Description for product",
+    "Rate": 427.56,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "538f5ce7-9bd4-4309-8e62-6e566b01fdfe"
+  },
+  {
+    "Id": "55882d2e-2bd3-4d54-822a-9ae613dbba5c",
+    "Name": "Desktop",
+    "Description": "Description for product",
+    "Rate": 1869.89,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "538f5ce7-9bd4-4309-8e62-6e566b01fdfe"
+  },
+  {
+    "Id": "b8f5f787-d4f8-40c7-a686-747e4512272a",
+    "Name": "Laptop",
+    "Description": "Description for product",
+    "Rate": 1057.98,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "538f5ce7-9bd4-4309-8e62-6e566b01fdfe"
+  },
+  {
+    "Id": "a11e12a0-d348-4513-a709-2c5afb74ee7d",
+    "Name": "Keyboard",
+    "Description": "Description for product",
+    "Rate": 1274.36,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "538f5ce7-9bd4-4309-8e62-6e566b01fdfe"
+  },
+  {
+    "Id": "3360c1b3-288c-442c-8875-bc33f09a7936",
+    "Name": "Desktop",
+    "Description": "Description for product",
+    "Rate": 566.66,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "538f5ce7-9bd4-4309-8e62-6e566b01fdfe"
+  },
+  {
+    "Id": "354879c7-1823-47f8-aaa4-88a4d5953dd4",
+    "Name": "Desktop",
+    "Description": "Description for product",
+    "Rate": 511.46,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "538f5ce7-9bd4-4309-8e62-6e566b01fdfe"
+  },
+  {
+    "Id": "548512e3-8179-4645-b15a-4d503748128c",
+    "Name": "Charger",
+    "Description": "Description for product",
+    "Rate": 116.07,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "538f5ce7-9bd4-4309-8e62-6e566b01fdfe"
+  },
+  {
+    "Id": "f10c5dd0-1380-48c0-944d-840bde587d30",
+    "Name": "Charger",
+    "Description": "Description for product",
+    "Rate": 1945.67,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "538f5ce7-9bd4-4309-8e62-6e566b01fdfe"
+  },
+  {
+    "Id": "e048f58c-865e-4af0-a531-ea7715422df1",
+    "Name": "Laptop",
+    "Description": "Description for product",
+    "Rate": 715.66,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "538f5ce7-9bd4-4309-8e62-6e566b01fdfe"
+  },
+  {
+    "Id": "b7da2b0d-73e0-4ab1-b7e9-6edd8fb2667b",
+    "Name": "Keyboard",
+    "Description": "Description for product",
+    "Rate": 107.43,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "538f5ce7-9bd4-4309-8e62-6e566b01fdfe"
+  },
+  {
+    "Id": "3b1b692e-db72-4592-800a-e6d6e9ae39a6",
+    "Name": "Smartwatch",
+    "Description": "Description for product",
+    "Rate": 1367.56,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "538f5ce7-9bd4-4309-8e62-6e566b01fdfe"
+  },
+  {
+    "Id": "f38b247f-6e6d-46a1-a781-2dd12d35e755",
+    "Name": "Tablet",
+    "Description": "Description for product",
+    "Rate": 1804.56,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "538f5ce7-9bd4-4309-8e62-6e566b01fdfe"
+  },
+  {
+    "Id": "6a6ffbbe-51e3-48cb-982c-62610729e186",
+    "Name": "Laptop",
+    "Description": "Description for product",
+    "Rate": 1201.32,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "538f5ce7-9bd4-4309-8e62-6e566b01fdfe"
+  },
+  {
+    "Id": "7889edef-fced-428b-ae82-3012bb42ad0d",
+    "Name": "Smartphone",
+    "Description": "Description for product",
+    "Rate": 519.28,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "538f5ce7-9bd4-4309-8e62-6e566b01fdfe"
+  },
+  {
+    "Id": "ff11ac65-6b05-409b-8930-0c61ee88cfe8",
+    "Name": "Smartwatch",
+    "Description": "Description for product",
+    "Rate": 1744.44,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "538f5ce7-9bd4-4309-8e62-6e566b01fdfe"
+  },
+  {
+    "Id": "97c3dc39-8bfe-42a0-9daa-6ec6bba2aedb",
+    "Name": "Tablet",
+    "Description": "Description for product",
+    "Rate": 854.46,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "538f5ce7-9bd4-4309-8e62-6e566b01fdfe"
+  },
+  {
+    "Id": "757ec35e-f7d1-483e-ab2e-d2f16a380032",
+    "Name": "Smartwatch",
+    "Description": "Description for product",
+    "Rate": 1793.49,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "d72ee823-f4e6-43c4-84b5-0e27f8c290f2"
+  },
+  {
+    "Id": "95c205b4-d68b-4e8a-bb53-13fbe7554a68",
+    "Name": "Tablet",
+    "Description": "Description for product",
+    "Rate": 490.96,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "d72ee823-f4e6-43c4-84b5-0e27f8c290f2"
+  },
+  {
+    "Id": "10fe7a00-1c9c-4057-9869-fc28d3f4f228",
+    "Name": "Headphones",
+    "Description": "Description for product",
+    "Rate": 227.59,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "d72ee823-f4e6-43c4-84b5-0e27f8c290f2"
+  },
+  {
+    "Id": "820f5f11-8329-4a95-bee5-5a1c406516d4",
+    "Name": "Mouse",
+    "Description": "Description for product",
+    "Rate": 1036.27,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "d72ee823-f4e6-43c4-84b5-0e27f8c290f2"
+  },
+  {
+    "Id": "4a552f96-b7a4-42bc-8536-5b9d789e2342",
+    "Name": "Headphones",
+    "Description": "Description for product",
+    "Rate": 1684.68,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "d72ee823-f4e6-43c4-84b5-0e27f8c290f2"
+  },
+  {
+    "Id": "2357e243-d0cd-4d40-81e4-c76f7e6e9cf2",
+    "Name": "Laptop",
+    "Description": "Description for product",
+    "Rate": 1340.8,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "d72ee823-f4e6-43c4-84b5-0e27f8c290f2"
+  },
+  {
+    "Id": "00753c4e-c1db-40c7-bc89-6e74869b6230",
+    "Name": "Tablet",
+    "Description": "Description for product",
+    "Rate": 1098.25,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "d72ee823-f4e6-43c4-84b5-0e27f8c290f2"
+  },
+  {
+    "Id": "a6f38398-bc2b-4af7-8977-a282df0e9e2c",
+    "Name": "Headphones",
+    "Description": "Description for product",
+    "Rate": 421.89,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "d72ee823-f4e6-43c4-84b5-0e27f8c290f2"
+  },
+  {
+    "Id": "dd025ce9-de5f-4a53-b98c-b5643e5f962e",
+    "Name": "Headphones",
+    "Description": "Description for product",
+    "Rate": 785.56,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "d72ee823-f4e6-43c4-84b5-0e27f8c290f2"
+  },
+  {
+    "Id": "45782d7d-9683-46e6-b53e-4dcb12c20d69",
+    "Name": "Desktop",
+    "Description": "Description for product",
+    "Rate": 628.31,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "d72ee823-f4e6-43c4-84b5-0e27f8c290f2"
+  },
+  {
+    "Id": "70e4d95b-0d1d-427c-82a5-6e156b707cc8",
+    "Name": "Monitor",
+    "Description": "Description for product",
+    "Rate": 1057.09,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "d72ee823-f4e6-43c4-84b5-0e27f8c290f2"
+  },
+  {
+    "Id": "5a982edd-5a3e-46d0-b803-70d962cf85c7",
+    "Name": "Desktop",
+    "Description": "Description for product",
+    "Rate": 261.3,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "d72ee823-f4e6-43c4-84b5-0e27f8c290f2"
+  },
+  {
+    "Id": "8d70b13f-9ff7-45dc-8a3b-41c494bbb3c9",
+    "Name": "Charger",
+    "Description": "Description for product",
+    "Rate": 1498.88,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "d72ee823-f4e6-43c4-84b5-0e27f8c290f2"
+  },
+  {
+    "Id": "722a3d48-7c07-4828-be67-b1f3c34f42b1",
+    "Name": "Desktop",
+    "Description": "Description for product",
+    "Rate": 1965.37,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "d72ee823-f4e6-43c4-84b5-0e27f8c290f2"
+  },
+  {
+    "Id": "95ad3e03-957b-4d46-8a1d-ebd28ecb2a38",
+    "Name": "Smartphone",
+    "Description": "Description for product",
+    "Rate": 1916.61,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "d72ee823-f4e6-43c4-84b5-0e27f8c290f2"
+  },
+  {
+    "Id": "b7834a61-4099-47cd-8988-6032bee05c6b",
+    "Name": "Desktop",
+    "Description": "Description for product",
+    "Rate": 1206.38,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "d72ee823-f4e6-43c4-84b5-0e27f8c290f2"
+  },
+  {
+    "Id": "82a7f335-3eca-43da-aeef-bf63841aea86",
+    "Name": "Smartwatch",
+    "Description": "Description for product",
+    "Rate": 865.52,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "d72ee823-f4e6-43c4-84b5-0e27f8c290f2"
+  },
+  {
+    "Id": "c833674e-1622-42ac-8b28-f55dc9e3591f",
+    "Name": "Monitor",
+    "Description": "Description for product",
+    "Rate": 543.21,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "d72ee823-f4e6-43c4-84b5-0e27f8c290f2"
+  },
+  {
+    "Id": "bdb410b8-9e2b-49f3-8a78-4d166ce12523",
+    "Name": "Desktop",
+    "Description": "Description for product",
+    "Rate": 985.0,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "d72ee823-f4e6-43c4-84b5-0e27f8c290f2"
+  },
+  {
+    "Id": "3506f6ef-f8dd-46d3-bb4e-643e00136421",
+    "Name": "Mouse",
+    "Description": "Description for product",
+    "Rate": 965.77,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "d72ee823-f4e6-43c4-84b5-0e27f8c290f2"
+  },
+  {
+    "Id": "e2e31f60-bd32-42f4-ad15-2161bee7fced",
+    "Name": "Headphones",
+    "Description": "Description for product",
+    "Rate": 1914.42,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "d72ee823-f4e6-43c4-84b5-0e27f8c290f2"
+  },
+  {
+    "Id": "cd0320af-cf69-4330-9594-e557dc452edb",
+    "Name": "Desktop",
+    "Description": "Description for product",
+    "Rate": 567.03,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "d72ee823-f4e6-43c4-84b5-0e27f8c290f2"
+  },
+  {
+    "Id": "6f032e29-833c-4b0e-b81b-2ce335a7aefd",
+    "Name": "Mouse",
+    "Description": "Description for product",
+    "Rate": 1976.87,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "d72ee823-f4e6-43c4-84b5-0e27f8c290f2"
+  },
+  {
+    "Id": "b2ad680c-5df1-4663-81e0-e352b9357a13",
+    "Name": "Keyboard",
+    "Description": "Description for product",
+    "Rate": 1944.2,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "d72ee823-f4e6-43c4-84b5-0e27f8c290f2"
+  },
+  {
+    "Id": "25aba5e8-4699-4a21-a526-3cb96f1b7f2a",
+    "Name": "Headphones",
+    "Description": "Description for product",
+    "Rate": 1056.68,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "d72ee823-f4e6-43c4-84b5-0e27f8c290f2"
+  },
+  {
+    "Id": "7e0105dd-8e55-47b5-a44c-7036c3f52569",
+    "Name": "Charger",
+    "Description": "Description for product",
+    "Rate": 1535.87,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "5a1488ed-8e5c-40f9-ab48-6b73ecc1d6a0"
+  },
+  {
+    "Id": "37e2d198-828d-4675-b34c-d481a37f4153",
+    "Name": "Smartwatch",
+    "Description": "Description for product",
+    "Rate": 1397.85,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "5a1488ed-8e5c-40f9-ab48-6b73ecc1d6a0"
+  },
+  {
+    "Id": "1a52c870-aedb-4a03-be2c-f609e204ee9a",
+    "Name": "Charger",
+    "Description": "Description for product",
+    "Rate": 232.26,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "5a1488ed-8e5c-40f9-ab48-6b73ecc1d6a0"
+  },
+  {
+    "Id": "9c5e5378-2ce2-495e-aa71-f77e367da6fe",
+    "Name": "Smartwatch",
+    "Description": "Description for product",
+    "Rate": 565.16,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "5a1488ed-8e5c-40f9-ab48-6b73ecc1d6a0"
+  },
+  {
+    "Id": "8c48e63c-0d1c-40e0-8a1a-9ffde71f670c",
+    "Name": "Headphones",
+    "Description": "Description for product",
+    "Rate": 373.74,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "5a1488ed-8e5c-40f9-ab48-6b73ecc1d6a0"
+  },
+  {
+    "Id": "5098fb79-744d-4ef3-8952-54804a08324c",
+    "Name": "Headphones",
+    "Description": "Description for product",
+    "Rate": 1656.43,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "5a1488ed-8e5c-40f9-ab48-6b73ecc1d6a0"
+  },
+  {
+    "Id": "db731f3f-7141-413d-a6f6-edf043a4b9c4",
+    "Name": "Mouse",
+    "Description": "Description for product",
+    "Rate": 136.91,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "5a1488ed-8e5c-40f9-ab48-6b73ecc1d6a0"
+  },
+  {
+    "Id": "7bc89fb7-7eb8-4099-bf2f-28319bf20a5d",
+    "Name": "Smartwatch",
+    "Description": "Description for product",
+    "Rate": 1010.55,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "5a1488ed-8e5c-40f9-ab48-6b73ecc1d6a0"
+  },
+  {
+    "Id": "72fc82f0-91ec-4fac-a809-9055e15ed18d",
+    "Name": "Smartphone",
+    "Description": "Description for product",
+    "Rate": 102.82,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "5a1488ed-8e5c-40f9-ab48-6b73ecc1d6a0"
+  },
+  {
+    "Id": "d3293986-aae3-49c3-87a2-9180b0afa15b",
+    "Name": "Keyboard",
+    "Description": "Description for product",
+    "Rate": 584.23,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "5a1488ed-8e5c-40f9-ab48-6b73ecc1d6a0"
+  },
+  {
+    "Id": "7b80dd2e-0b07-4cd4-9f58-67974384e413",
+    "Name": "Monitor",
+    "Description": "Description for product",
+    "Rate": 277.96,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "5a1488ed-8e5c-40f9-ab48-6b73ecc1d6a0"
+  },
+  {
+    "Id": "4630882a-2bf7-4030-b0ec-9aeb6f571172",
+    "Name": "Desktop",
+    "Description": "Description for product",
+    "Rate": 468.19,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "5a1488ed-8e5c-40f9-ab48-6b73ecc1d6a0"
+  },
+  {
+    "Id": "b82301d7-0477-46db-920f-c1943cda7b93",
+    "Name": "Smartphone",
+    "Description": "Description for product",
+    "Rate": 1047.05,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "5a1488ed-8e5c-40f9-ab48-6b73ecc1d6a0"
+  },
+  {
+    "Id": "ca739ca5-ca12-47ee-ac8e-83d662e80769",
+    "Name": "Smartphone",
+    "Description": "Description for product",
+    "Rate": 603.0,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "5a1488ed-8e5c-40f9-ab48-6b73ecc1d6a0"
+  },
+  {
+    "Id": "8f16f7eb-2603-49e8-a7d3-46164239f243",
+    "Name": "Tablet",
+    "Description": "Description for product",
+    "Rate": 1294.71,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "5a1488ed-8e5c-40f9-ab48-6b73ecc1d6a0"
+  },
+  {
+    "Id": "57d24865-74bd-43e7-a809-3697a85491ac",
+    "Name": "Mouse",
+    "Description": "Description for product",
+    "Rate": 989.94,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "5a1488ed-8e5c-40f9-ab48-6b73ecc1d6a0"
+  },
+  {
+    "Id": "92c8d0c4-281c-4074-87df-104008d9aec4",
+    "Name": "Tablet",
+    "Description": "Description for product",
+    "Rate": 1030.95,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "5a1488ed-8e5c-40f9-ab48-6b73ecc1d6a0"
+  },
+  {
+    "Id": "22c7167e-e66f-468e-a789-3bf1da96c29b",
+    "Name": "Charger",
+    "Description": "Description for product",
+    "Rate": 1489.47,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "5a1488ed-8e5c-40f9-ab48-6b73ecc1d6a0"
+  },
+  {
+    "Id": "ebb5b4a3-e29a-421b-a95f-ea9cedbad6e2",
+    "Name": "Headphones",
+    "Description": "Description for product",
+    "Rate": 242.92,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "5a1488ed-8e5c-40f9-ab48-6b73ecc1d6a0"
+  },
+  {
+    "Id": "c808b26d-3edf-4809-bdae-6ad50272deca",
+    "Name": "Charger",
+    "Description": "Description for product",
+    "Rate": 465.42,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "5a1488ed-8e5c-40f9-ab48-6b73ecc1d6a0"
+  },
+  {
+    "Id": "12575410-96d3-4969-afc6-75448156e87a",
+    "Name": "Desktop",
+    "Description": "Description for product",
+    "Rate": 1444.74,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "5a1488ed-8e5c-40f9-ab48-6b73ecc1d6a0"
+  },
+  {
+    "Id": "deb77708-8c73-4d42-aec6-7e4d75e6ba25",
+    "Name": "Headphones",
+    "Description": "Description for product",
+    "Rate": 840.36,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "5a1488ed-8e5c-40f9-ab48-6b73ecc1d6a0"
+  },
+  {
+    "Id": "93eb7271-7f52-420e-a581-b8cdf308e675",
+    "Name": "Charger",
+    "Description": "Description for product",
+    "Rate": 79.53,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "5a1488ed-8e5c-40f9-ab48-6b73ecc1d6a0"
+  },
+  {
+    "Id": "d266d267-0395-4ed6-b822-3f84d0dda5d8",
+    "Name": "Keyboard",
+    "Description": "Description for product",
+    "Rate": 1864.07,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "5a1488ed-8e5c-40f9-ab48-6b73ecc1d6a0"
+  },
+  {
+    "Id": "dddd8f6b-854b-4dda-8ee9-526b20d67fb0",
+    "Name": "Charger",
+    "Description": "Description for product",
+    "Rate": 262.03,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "5a1488ed-8e5c-40f9-ab48-6b73ecc1d6a0"
+  },
+  {
+    "Id": "7e922fd2-a51b-4f2f-9f1e-039f1bf3cd51",
+    "Name": "Smartwatch",
+    "Description": "Description for product",
+    "Rate": 946.54,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "c63afcf8-28db-462e-86bc-0d4c0c2c6a31"
+  },
+  {
+    "Id": "192edf28-7f26-4fad-9d8c-3ecb50182b20",
+    "Name": "Smartwatch",
+    "Description": "Description for product",
+    "Rate": 489.45,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "c63afcf8-28db-462e-86bc-0d4c0c2c6a31"
+  },
+  {
+    "Id": "5de50ba0-f249-4d9b-b75f-6559c5eef69f",
+    "Name": "Monitor",
+    "Description": "Description for product",
+    "Rate": 1627.39,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "c63afcf8-28db-462e-86bc-0d4c0c2c6a31"
+  },
+  {
+    "Id": "74829f94-b9ec-4e1b-8809-7da456c5733a",
+    "Name": "Desktop",
+    "Description": "Description for product",
+    "Rate": 1201.75,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "c63afcf8-28db-462e-86bc-0d4c0c2c6a31"
+  },
+  {
+    "Id": "8992de94-8230-48e1-b861-1c1c35bcebbb",
+    "Name": "Headphones",
+    "Description": "Description for product",
+    "Rate": 1228.52,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "c63afcf8-28db-462e-86bc-0d4c0c2c6a31"
+  },
+  {
+    "Id": "e21361bd-65a4-460c-b144-73504d440a8e",
+    "Name": "Mouse",
+    "Description": "Description for product",
+    "Rate": 297.55,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "c63afcf8-28db-462e-86bc-0d4c0c2c6a31"
+  },
+  {
+    "Id": "6e2fc2d5-f126-45af-8697-dbdc1eba14f9",
+    "Name": "Laptop",
+    "Description": "Description for product",
+    "Rate": 1287.3,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "c63afcf8-28db-462e-86bc-0d4c0c2c6a31"
+  },
+  {
+    "Id": "ade4f764-adc2-4c18-ac0e-4332e03108d4",
+    "Name": "Monitor",
+    "Description": "Description for product",
+    "Rate": 1840.42,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "c63afcf8-28db-462e-86bc-0d4c0c2c6a31"
+  },
+  {
+    "Id": "81012bc3-6231-4e03-a6f9-0a8afc1a3d30",
+    "Name": "Desktop",
+    "Description": "Description for product",
+    "Rate": 1312.8,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "c63afcf8-28db-462e-86bc-0d4c0c2c6a31"
+  },
+  {
+    "Id": "324d2184-fb22-4e1e-84a0-ed6b2724377e",
+    "Name": "Mouse",
+    "Description": "Description for product",
+    "Rate": 75.22,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "c63afcf8-28db-462e-86bc-0d4c0c2c6a31"
+  },
+  {
+    "Id": "52dd8080-9b9d-4aea-b57d-38c27466c40f",
+    "Name": "Charger",
+    "Description": "Description for product",
+    "Rate": 793.94,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "c63afcf8-28db-462e-86bc-0d4c0c2c6a31"
+  },
+  {
+    "Id": "85af6170-1560-4240-9918-39c20eaceff1",
+    "Name": "Mouse",
+    "Description": "Description for product",
+    "Rate": 805.53,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "c63afcf8-28db-462e-86bc-0d4c0c2c6a31"
+  },
+  {
+    "Id": "c5fc01c1-2f2a-4bf0-b5de-3f2e682de698",
+    "Name": "Tablet",
+    "Description": "Description for product",
+    "Rate": 1647.45,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "c63afcf8-28db-462e-86bc-0d4c0c2c6a31"
+  },
+  {
+    "Id": "38268a53-62fc-4d1a-bb74-9086cafa824e",
+    "Name": "Smartphone",
+    "Description": "Description for product",
+    "Rate": 594.31,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "c63afcf8-28db-462e-86bc-0d4c0c2c6a31"
+  },
+  {
+    "Id": "a9aeea46-e306-4d47-a8f4-33394cab0e73",
+    "Name": "Keyboard",
+    "Description": "Description for product",
+    "Rate": 1214.87,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "c63afcf8-28db-462e-86bc-0d4c0c2c6a31"
+  },
+  {
+    "Id": "c0ca4fa4-7e92-41b4-ad53-947b9bc917aa",
+    "Name": "Desktop",
+    "Description": "Description for product",
+    "Rate": 1974.68,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "c63afcf8-28db-462e-86bc-0d4c0c2c6a31"
+  },
+  {
+    "Id": "d29b7a82-562b-41e7-b92b-b8095f54c5c3",
+    "Name": "Smartphone",
+    "Description": "Description for product",
+    "Rate": 84.12,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "c63afcf8-28db-462e-86bc-0d4c0c2c6a31"
+  },
+  {
+    "Id": "5eef453f-1b61-47c6-b7b5-3d12fc4f50ad",
+    "Name": "Smartwatch",
+    "Description": "Description for product",
+    "Rate": 216.85,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "c63afcf8-28db-462e-86bc-0d4c0c2c6a31"
+  },
+  {
+    "Id": "4f2fb7d9-cd85-4fa1-9c2d-e40a479d6f66",
+    "Name": "Headphones",
+    "Description": "Description for product",
+    "Rate": 1739.7,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "c63afcf8-28db-462e-86bc-0d4c0c2c6a31"
+  },
+  {
+    "Id": "4bd349b4-6c0e-4701-be74-b9d9077bdbb7",
+    "Name": "Laptop",
+    "Description": "Description for product",
+    "Rate": 1745.45,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "c63afcf8-28db-462e-86bc-0d4c0c2c6a31"
+  },
+  {
+    "Id": "5a8f89ee-92a8-4c90-8f6f-28e20d40b562",
+    "Name": "Laptop",
+    "Description": "Description for product",
+    "Rate": 1589.74,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "c63afcf8-28db-462e-86bc-0d4c0c2c6a31"
+  },
+  {
+    "Id": "1cb7ccd0-34fd-418b-a263-f56cdd6fec38",
+    "Name": "Tablet",
+    "Description": "Description for product",
+    "Rate": 1298.91,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "c63afcf8-28db-462e-86bc-0d4c0c2c6a31"
+  },
+  {
+    "Id": "3bbb7e97-d517-4182-9c15-888ecb6294ff",
+    "Name": "Smartphone",
+    "Description": "Description for product",
+    "Rate": 1313.06,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "c63afcf8-28db-462e-86bc-0d4c0c2c6a31"
+  },
+  {
+    "Id": "4faf19b1-a983-4fce-b4c5-06a521da3db9",
+    "Name": "Charger",
+    "Description": "Description for product",
+    "Rate": 840.66,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "c63afcf8-28db-462e-86bc-0d4c0c2c6a31"
+  },
+  {
+    "Id": "f6c30158-ed65-40cb-9d4c-bd7e8622edc7",
+    "Name": "Laptop",
+    "Description": "Description for product",
+    "Rate": 1377.0,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "c63afcf8-28db-462e-86bc-0d4c0c2c6a31"
+  },
+  {
+    "Id": "34ac5bb4-5eb6-46c3-882c-b927d1ab9522",
+    "Name": "Mouse",
+    "Description": "Description for product",
+    "Rate": 1770.73,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "366f6531-d225-47da-b7f8-80507978f702"
+  },
+  {
+    "Id": "df6be7cd-d29d-4b8d-89dc-f30b6046d04d",
+    "Name": "Charger",
+    "Description": "Description for product",
+    "Rate": 745.01,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "366f6531-d225-47da-b7f8-80507978f702"
+  },
+  {
+    "Id": "cd2e2579-a74d-46ab-858e-fae6602e6274",
+    "Name": "Keyboard",
+    "Description": "Description for product",
+    "Rate": 1246.56,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "366f6531-d225-47da-b7f8-80507978f702"
+  },
+  {
+    "Id": "25b25e20-8fa9-446c-a5b4-bb21d25f256c",
+    "Name": "Smartwatch",
+    "Description": "Description for product",
+    "Rate": 72.21,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "366f6531-d225-47da-b7f8-80507978f702"
+  },
+  {
+    "Id": "f2bfa9de-298b-46a5-ad2d-ea20e2bf52ba",
+    "Name": "Headphones",
+    "Description": "Description for product",
+    "Rate": 340.24,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "366f6531-d225-47da-b7f8-80507978f702"
+  },
+  {
+    "Id": "0b66cd15-6a6d-4342-8ab7-69440cad3097",
+    "Name": "Tablet",
+    "Description": "Description for product",
+    "Rate": 1061.24,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "366f6531-d225-47da-b7f8-80507978f702"
+  },
+  {
+    "Id": "20b70bf8-eaef-4e5d-b39b-f70ab89b3dd9",
+    "Name": "Keyboard",
+    "Description": "Description for product",
+    "Rate": 212.47,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "366f6531-d225-47da-b7f8-80507978f702"
+  },
+  {
+    "Id": "3150f594-676d-4250-90c3-1683a6fe6da4",
+    "Name": "Mouse",
+    "Description": "Description for product",
+    "Rate": 496.07,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "366f6531-d225-47da-b7f8-80507978f702"
+  },
+  {
+    "Id": "7382531a-7dad-4945-9d99-cf6a6737cc73",
+    "Name": "Headphones",
+    "Description": "Description for product",
+    "Rate": 756.27,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "366f6531-d225-47da-b7f8-80507978f702"
+  },
+  {
+    "Id": "221fb751-16cb-44b0-8b01-d735163785a1",
+    "Name": "Desktop",
+    "Description": "Description for product",
+    "Rate": 717.83,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "366f6531-d225-47da-b7f8-80507978f702"
+  },
+  {
+    "Id": "701fad63-9c08-4932-8fb9-1b50cea203f7",
+    "Name": "Smartwatch",
+    "Description": "Description for product",
+    "Rate": 206.95,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "366f6531-d225-47da-b7f8-80507978f702"
+  },
+  {
+    "Id": "60cbde75-37b4-4408-a806-710c3e217d6d",
+    "Name": "Charger",
+    "Description": "Description for product",
+    "Rate": 452.61,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "366f6531-d225-47da-b7f8-80507978f702"
+  },
+  {
+    "Id": "20902c22-1da4-4d17-bbf8-490225024596",
+    "Name": "Desktop",
+    "Description": "Description for product",
+    "Rate": 327.42,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "366f6531-d225-47da-b7f8-80507978f702"
+  },
+  {
+    "Id": "5d326f10-0fc7-4088-a62a-76d2f7a95161",
+    "Name": "Smartphone",
+    "Description": "Description for product",
+    "Rate": 1934.02,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "366f6531-d225-47da-b7f8-80507978f702"
+  },
+  {
+    "Id": "3c4f9c8b-78a9-4a33-85bf-1d9247cde760",
+    "Name": "Headphones",
+    "Description": "Description for product",
+    "Rate": 1982.1,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "366f6531-d225-47da-b7f8-80507978f702"
+  },
+  {
+    "Id": "8e1cae57-128d-4d80-a89d-2cafbcc94b89",
+    "Name": "Keyboard",
+    "Description": "Description for product",
+    "Rate": 528.98,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "366f6531-d225-47da-b7f8-80507978f702"
+  },
+  {
+    "Id": "32dd7d94-6f14-4811-a228-bd778e5a68c4",
+    "Name": "Monitor",
+    "Description": "Description for product",
+    "Rate": 783.83,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "366f6531-d225-47da-b7f8-80507978f702"
+  },
+  {
+    "Id": "ed6b94ea-cfd2-4555-b965-d5f4209c4a0c",
+    "Name": "Headphones",
+    "Description": "Description for product",
+    "Rate": 1921.39,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "366f6531-d225-47da-b7f8-80507978f702"
+  },
+  {
+    "Id": "dd1881d8-9515-4488-9c71-19009505278e",
+    "Name": "Laptop",
+    "Description": "Description for product",
+    "Rate": 545.0,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "366f6531-d225-47da-b7f8-80507978f702"
+  },
+  {
+    "Id": "5060c5c2-f809-4077-87ae-9c8cd562731b",
+    "Name": "Mouse",
+    "Description": "Description for product",
+    "Rate": 1886.09,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "366f6531-d225-47da-b7f8-80507978f702"
+  },
+  {
+    "Id": "372337e0-f1d7-4f54-998e-8bd4521ea81e",
+    "Name": "Monitor",
+    "Description": "Description for product",
+    "Rate": 1160.03,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "366f6531-d225-47da-b7f8-80507978f702"
+  },
+  {
+    "Id": "e5312f2f-f25d-4a6d-9546-2f4c4be8dbb9",
+    "Name": "Keyboard",
+    "Description": "Description for product",
+    "Rate": 732.09,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "366f6531-d225-47da-b7f8-80507978f702"
+  },
+  {
+    "Id": "ad4a8223-f1cb-4872-ae4b-719007f81138",
+    "Name": "Laptop",
+    "Description": "Description for product",
+    "Rate": 1100.08,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "366f6531-d225-47da-b7f8-80507978f702"
+  },
+  {
+    "Id": "552cac19-cf07-4c04-9f7e-8f09bdcc9c31",
+    "Name": "Charger",
+    "Description": "Description for product",
+    "Rate": 1972.15,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "366f6531-d225-47da-b7f8-80507978f702"
+  },
+  {
+    "Id": "8952d6d8-e9fb-45aa-8760-334c464a9de9",
+    "Name": "Laptop",
+    "Description": "Description for product",
+    "Rate": 636.0,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "366f6531-d225-47da-b7f8-80507978f702"
+  },
+  {
+    "Id": "59a8bb75-fd1c-4138-9460-e25d7f1eb2b2",
+    "Name": "Headphones",
+    "Description": "Description for product",
+    "Rate": 799.33,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "ce5c97cb-0201-47be-9e86-c8f92b897800"
+  },
+  {
+    "Id": "7b1b95a5-223e-463f-ab50-8b7036b339d0",
+    "Name": "Smartphone",
+    "Description": "Description for product",
+    "Rate": 1373.9,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "ce5c97cb-0201-47be-9e86-c8f92b897800"
+  },
+  {
+    "Id": "c43935e1-4951-4741-b8fb-d2129a57c831",
+    "Name": "Headphones",
+    "Description": "Description for product",
+    "Rate": 1408.72,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "ce5c97cb-0201-47be-9e86-c8f92b897800"
+  },
+  {
+    "Id": "d28a873a-ba0e-4ef6-ad6c-06b84fb0c297",
+    "Name": "Tablet",
+    "Description": "Description for product",
+    "Rate": 1480.82,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "ce5c97cb-0201-47be-9e86-c8f92b897800"
+  },
+  {
+    "Id": "e5d48d68-13a9-449b-ac66-5456280a0cb8",
+    "Name": "Smartphone",
+    "Description": "Description for product",
+    "Rate": 118.02,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "ce5c97cb-0201-47be-9e86-c8f92b897800"
+  },
+  {
+    "Id": "1c9540fe-5d75-4594-868b-788af40e1415",
+    "Name": "Desktop",
+    "Description": "Description for product",
+    "Rate": 1101.34,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "ce5c97cb-0201-47be-9e86-c8f92b897800"
+  },
+  {
+    "Id": "69b39e4f-39d7-4a8f-a287-c322af8748a2",
+    "Name": "Desktop",
+    "Description": "Description for product",
+    "Rate": 591.83,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "ce5c97cb-0201-47be-9e86-c8f92b897800"
+  },
+  {
+    "Id": "a12dd51f-1e13-4837-b98f-e5d6d2136e06",
+    "Name": "Keyboard",
+    "Description": "Description for product",
+    "Rate": 786.09,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "ce5c97cb-0201-47be-9e86-c8f92b897800"
+  },
+  {
+    "Id": "e0a01bc4-4236-4d92-b68e-5191c80e4670",
+    "Name": "Mouse",
+    "Description": "Description for product",
+    "Rate": 276.29,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "ce5c97cb-0201-47be-9e86-c8f92b897800"
+  },
+  {
+    "Id": "a6018015-0c47-4598-a6a0-f4d8f9eb47a8",
+    "Name": "Tablet",
+    "Description": "Description for product",
+    "Rate": 61.33,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "ce5c97cb-0201-47be-9e86-c8f92b897800"
+  },
+  {
+    "Id": "87f1db11-5835-43b1-975a-9114277218be",
+    "Name": "Smartwatch",
+    "Description": "Description for product",
+    "Rate": 1781.52,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "ce5c97cb-0201-47be-9e86-c8f92b897800"
+  },
+  {
+    "Id": "d9188ef8-26e0-4385-884a-4d3f0d3bea9f",
+    "Name": "Mouse",
+    "Description": "Description for product",
+    "Rate": 1953.53,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "ce5c97cb-0201-47be-9e86-c8f92b897800"
+  },
+  {
+    "Id": "8fa5af5d-debe-4ffb-8cec-74c46df6686b",
+    "Name": "Charger",
+    "Description": "Description for product",
+    "Rate": 831.45,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "ce5c97cb-0201-47be-9e86-c8f92b897800"
+  },
+  {
+    "Id": "75d0f2a2-8259-4e82-bc36-a313e296ff92",
+    "Name": "Headphones",
+    "Description": "Description for product",
+    "Rate": 1413.97,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "ce5c97cb-0201-47be-9e86-c8f92b897800"
+  },
+  {
+    "Id": "6a41e363-cc4d-426c-9775-364163854054",
+    "Name": "Mouse",
+    "Description": "Description for product",
+    "Rate": 1880.76,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "ce5c97cb-0201-47be-9e86-c8f92b897800"
+  },
+  {
+    "Id": "8135a9a0-81e5-4c7f-af1d-8dbe0d3ad04b",
+    "Name": "Headphones",
+    "Description": "Description for product",
+    "Rate": 614.42,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "ce5c97cb-0201-47be-9e86-c8f92b897800"
+  },
+  {
+    "Id": "3c150a2d-4971-4d8d-81b1-71db0e942518",
+    "Name": "Charger",
+    "Description": "Description for product",
+    "Rate": 401.18,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "ce5c97cb-0201-47be-9e86-c8f92b897800"
+  },
+  {
+    "Id": "9483354e-3608-42c2-84ac-e1c6a89b1d96",
+    "Name": "Laptop",
+    "Description": "Description for product",
+    "Rate": 326.45,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "ce5c97cb-0201-47be-9e86-c8f92b897800"
+  },
+  {
+    "Id": "0fababcd-661f-44d3-88e5-717f9223b241",
+    "Name": "Mouse",
+    "Description": "Description for product",
+    "Rate": 824.7,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "ce5c97cb-0201-47be-9e86-c8f92b897800"
+  },
+  {
+    "Id": "ae4d3678-832a-43fd-b5ec-5ced3a2cab33",
+    "Name": "Mouse",
+    "Description": "Description for product",
+    "Rate": 831.06,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "ce5c97cb-0201-47be-9e86-c8f92b897800"
+  },
+  {
+    "Id": "6bdc3da0-db30-4c47-b33c-a6da588d6833",
+    "Name": "Laptop",
+    "Description": "Description for product",
+    "Rate": 57.87,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "ce5c97cb-0201-47be-9e86-c8f92b897800"
+  },
+  {
+    "Id": "ba385c6a-e550-46d9-b1c0-68d0b576c983",
+    "Name": "Charger",
+    "Description": "Description for product",
+    "Rate": 1661.01,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "ce5c97cb-0201-47be-9e86-c8f92b897800"
+  },
+  {
+    "Id": "86168fc3-0c78-4b94-b0aa-f1299b0aa625",
+    "Name": "Monitor",
+    "Description": "Description for product",
+    "Rate": 873.93,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "ce5c97cb-0201-47be-9e86-c8f92b897800"
+  },
+  {
+    "Id": "b66b5ecc-d764-42ff-8257-54ee1faf1d72",
+    "Name": "Mouse",
+    "Description": "Description for product",
+    "Rate": 944.9,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "ce5c97cb-0201-47be-9e86-c8f92b897800"
+  },
+  {
+    "Id": "7eb1225f-44bc-4c06-9e63-71d46db2a3a9",
+    "Name": "Mouse",
+    "Description": "Description for product",
+    "Rate": 590.28,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "ce5c97cb-0201-47be-9e86-c8f92b897800"
+  },
+  {
+    "Id": "a103ff4d-04c3-42ff-b9ec-a31f50519f99",
+    "Name": "Keyboard",
+    "Description": "Description for product",
+    "Rate": 958.57,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "3f1e62e0-de3e-4de2-b865-895a03f749d3"
+  },
+  {
+    "Id": "9ea277e6-d7c6-43ae-8ab1-aa297b8c31df",
+    "Name": "Headphones",
+    "Description": "Description for product",
+    "Rate": 175.87,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "3f1e62e0-de3e-4de2-b865-895a03f749d3"
+  },
+  {
+    "Id": "7ff125c1-6803-4c84-8538-0d4274a76b01",
+    "Name": "Mouse",
+    "Description": "Description for product",
+    "Rate": 1670.93,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "3f1e62e0-de3e-4de2-b865-895a03f749d3"
+  },
+  {
+    "Id": "8e611cfa-3741-451b-a0fc-d422ea084c64",
+    "Name": "Headphones",
+    "Description": "Description for product",
+    "Rate": 1018.05,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "3f1e62e0-de3e-4de2-b865-895a03f749d3"
+  },
+  {
+    "Id": "141988a1-378a-4389-8cfa-aa2e62313cfa",
+    "Name": "Smartphone",
+    "Description": "Description for product",
+    "Rate": 668.57,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "3f1e62e0-de3e-4de2-b865-895a03f749d3"
+  },
+  {
+    "Id": "99666e8a-fa09-4c50-a79b-6d58a4b9a0ea",
+    "Name": "Smartwatch",
+    "Description": "Description for product",
+    "Rate": 1843.11,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "3f1e62e0-de3e-4de2-b865-895a03f749d3"
+  },
+  {
+    "Id": "1daa511c-c6c2-4eb5-9e61-de64ece36676",
+    "Name": "Headphones",
+    "Description": "Description for product",
+    "Rate": 611.11,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "3f1e62e0-de3e-4de2-b865-895a03f749d3"
+  },
+  {
+    "Id": "74de799f-2e06-4410-98ef-4fc27da804ec",
+    "Name": "Tablet",
+    "Description": "Description for product",
+    "Rate": 1902.42,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "3f1e62e0-de3e-4de2-b865-895a03f749d3"
+  },
+  {
+    "Id": "4ac3e700-db31-43b6-ba36-439def0c821c",
+    "Name": "Smartwatch",
+    "Description": "Description for product",
+    "Rate": 578.77,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "3f1e62e0-de3e-4de2-b865-895a03f749d3"
+  },
+  {
+    "Id": "014ae772-9b0c-4c3f-8444-f1f850f9af53",
+    "Name": "Monitor",
+    "Description": "Description for product",
+    "Rate": 1423.67,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "3f1e62e0-de3e-4de2-b865-895a03f749d3"
+  },
+  {
+    "Id": "e284ffed-e332-40db-8273-91a901c961fa",
+    "Name": "Smartphone",
+    "Description": "Description for product",
+    "Rate": 511.3,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "3f1e62e0-de3e-4de2-b865-895a03f749d3"
+  },
+  {
+    "Id": "9907e4e0-2583-43af-a89a-383227d7b568",
+    "Name": "Desktop",
+    "Description": "Description for product",
+    "Rate": 846.64,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "3f1e62e0-de3e-4de2-b865-895a03f749d3"
+  },
+  {
+    "Id": "38d557be-d51b-432d-b139-86e470e694b0",
+    "Name": "Charger",
+    "Description": "Description for product",
+    "Rate": 1616.0,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "3f1e62e0-de3e-4de2-b865-895a03f749d3"
+  },
+  {
+    "Id": "fcd53ec9-4499-4642-94eb-74f78fe156df",
+    "Name": "Keyboard",
+    "Description": "Description for product",
+    "Rate": 465.1,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "3f1e62e0-de3e-4de2-b865-895a03f749d3"
+  },
+  {
+    "Id": "e7008216-5b84-4f5a-a40b-15c364a14333",
+    "Name": "Desktop",
+    "Description": "Description for product",
+    "Rate": 1061.36,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "3f1e62e0-de3e-4de2-b865-895a03f749d3"
+  },
+  {
+    "Id": "05a01539-38fe-49ad-95dc-d2ac14420dca",
+    "Name": "Headphones",
+    "Description": "Description for product",
+    "Rate": 1148.76,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "3f1e62e0-de3e-4de2-b865-895a03f749d3"
+  },
+  {
+    "Id": "3c4ba555-6c5c-463f-91e9-17e0aaa77b0f",
+    "Name": "Charger",
+    "Description": "Description for product",
+    "Rate": 610.65,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "3f1e62e0-de3e-4de2-b865-895a03f749d3"
+  },
+  {
+    "Id": "d5dcb7bf-88a7-4cae-ac79-51c992ed7e25",
+    "Name": "Mouse",
+    "Description": "Description for product",
+    "Rate": 1995.27,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "3f1e62e0-de3e-4de2-b865-895a03f749d3"
+  },
+  {
+    "Id": "ecebe3fe-00a0-40d6-8073-d9d9eb02fb66",
+    "Name": "Smartwatch",
+    "Description": "Description for product",
+    "Rate": 403.62,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "3f1e62e0-de3e-4de2-b865-895a03f749d3"
+  },
+  {
+    "Id": "6cd0bd10-9ef3-4c2a-9a36-80819265a885",
+    "Name": "Headphones",
+    "Description": "Description for product",
+    "Rate": 1002.15,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "3f1e62e0-de3e-4de2-b865-895a03f749d3"
+  },
+  {
+    "Id": "c48e757d-4309-4c17-a004-8f9cdf23c4a9",
+    "Name": "Desktop",
+    "Description": "Description for product",
+    "Rate": 819.1,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "3f1e62e0-de3e-4de2-b865-895a03f749d3"
+  },
+  {
+    "Id": "698a561c-7c14-430b-a298-05b8b3349cd8",
+    "Name": "Smartphone",
+    "Description": "Description for product",
+    "Rate": 637.91,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "3f1e62e0-de3e-4de2-b865-895a03f749d3"
+  },
+  {
+    "Id": "8abe2342-8196-4f95-bbae-29640908dd9b",
+    "Name": "Tablet",
+    "Description": "Description for product",
+    "Rate": 1431.62,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "3f1e62e0-de3e-4de2-b865-895a03f749d3"
+  },
+  {
+    "Id": "08a1f88d-3af6-4bb5-b4cf-9a02497c445b",
+    "Name": "Desktop",
+    "Description": "Description for product",
+    "Rate": 1855.45,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "3f1e62e0-de3e-4de2-b865-895a03f749d3"
+  },
+  {
+    "Id": "763de415-bfdf-49fb-818d-14ccce65513d",
+    "Name": "Charger",
+    "Description": "Description for product",
+    "Rate": 1221.31,
+    "ImagePath": "https://fullstackhero.net/images/product.png",
+    "BrandId": "3f1e62e0-de3e-4de2-b865-895a03f749d3"
+  }
+]

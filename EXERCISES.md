@@ -99,3 +99,6 @@ We can use FluentValidations to add a Request Validator. To check with the query
 
 Tip: use FluentValidationAutoValidation from the `SharpGrip.FluentValidation.AutoValidation.Mvc.Extensions` package.
 
+7. Too slow...
+
+Recently a lot of new brands were added and our frontend devs have set the default pagesize to high so now the product list is loading to slow. Maybe some compression can help?

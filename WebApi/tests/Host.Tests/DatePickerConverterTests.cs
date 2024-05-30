@@ -14,7 +14,7 @@ public class DatePickerConverterTests : AuthenticatedTestBase {
         : base(factory) { }
 
     [Fact]
-    public async Task DatePickerFormat_ShouldBeParseCorrectly() {
+    public async Task DatePickerFormat_ShouldBeParsedCorrectly() {
         // Arrange
         const string request = @"{
             ""Name"": ""i<3"",
@@ -27,7 +27,7 @@ public class DatePickerConverterTests : AuthenticatedTestBase {
 
         // Assert
         var savedBrandId = JsonSerializer.Deserialize<Guid>(await response.Content.ReadAsStringAsync());
-        string savedBrandJsonResponse = await (await Client.GetAsync($"api/v1.0/Brands/{savedBrandId}")).Content.ReadAsStringAsync();
+        string savedBrandJsonResponse = await (await Client.GetAsync($"api/v1/Brands/{savedBrandId}")).Content.ReadAsStringAsync();
         var savedBrand = JsonSerializer.Deserialize<BrandDto>(savedBrandJsonResponse,
             new JsonSerializerOptions {
                 PropertyNameCaseInsensitive = true,
