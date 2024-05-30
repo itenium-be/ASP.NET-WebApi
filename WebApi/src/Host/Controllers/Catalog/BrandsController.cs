@@ -44,7 +44,6 @@ public class BrandsController : VersionedApiController
     {
         var result = await _repository.FirstOrDefaultAsync(new BrandByIdSpec(id), cancellationToken);
         if (result == null)
-            // TODO: the po files are generated I hope? It included the namespace, so prolly won't work anymore now?
             throw new NotFoundException(_t["Brand {0} Not Found.", id]);
 
         return result;
