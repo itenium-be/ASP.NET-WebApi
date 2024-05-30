@@ -53,6 +53,13 @@ Program.cs
 ```c#
 builder.Services.AddControllers().AddJsonOptions(x =>
 {
+  // We cannot use DI in the DatePickerConverter because the IOC container has not yet been built
+  // This works because of the static field in the HttpContextAccessor
+  // private static readonly AsyncLocal<HttpContextHolder> _httpContextCurrent
+  // See: https://github.com/dotnet/aspnetcore/blob/main/src/Http/Http/src/HttpContextAccessor.cs
+  // Explained: https://blog.stephencleary.com/2016/12/eliding-async-await.html
+
+  // Note that this is NOT best practice!
   var httpContextAccessor = new HttpContextAccessor();
   var languageProvider = new LanguageProvider(httpContextAccessor);
   x.JsonSerializerOptions.Converters.Add(new DatePickerConverter(languageProvider));
