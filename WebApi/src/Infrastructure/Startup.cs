@@ -63,7 +63,6 @@ public static class Startup {
     private static IServiceCollection AddHealthCheck(this IServiceCollection services) =>
         services.AddHealthChecks().AddCheck<TenantHealthCheck>("Tenant").Services;
 
-
     public static async Task InitializeDatabasesAsync(this IServiceProvider services, CancellationToken cancellationToken = default) {
         // Create a new scope to retrieve scoped services
         using var scope = services.CreateScope();
