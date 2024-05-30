@@ -102,3 +102,16 @@ Tip: use FluentValidationAutoValidation from the `SharpGrip.FluentValidation.Aut
 7. Too slow...
 
 Recently a lot of new brands were added and our frontend devs have set the default pagesize to high so now the product list is loading to slow. Maybe some compression can help?
+
+7.1. Measure
+
+We've received complaints that some of our endpoints are (still!?) too slow.
+Because the user(s) didn't specify exactly what actions are lagging,
+we want to add middleware to log the timing of all requests.
+
+Log the URL, headers, body & querystring parameters.
+
+Bonus:  
+We want to avoid logging sensitive information:
+- Do not log the Authorization header
+- Do not log body properties that are decorated with a newly created [SensitiveAttribute]
